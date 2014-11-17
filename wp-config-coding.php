@@ -15,16 +15,16 @@
 
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress数据库的名称 */
-define('DB_NAME', 'mp');
+define('DB_NAME', 'cf_f1751ec3_6e75_4543_939c_dd0f16830f53');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'root');
+define('DB_USER', 'I2HMiLNooInb013t');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', '6399998');
+define('DB_PASSWORD', '8unZ0lFsxJQ4wECN');
 
 /** MySQL主机 */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '10.9.1.188');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'zTl{mp2<v-AFd}!,OU2e}aMc,*!LuhX}!_V.T]n#6`;H`m/}enGucN})|;xt?1X8');
+define('SECURE_AUTH_KEY',  ',Ef-H0=,6]N%cTAi]59Zn713VMZ(f[Y(Zn81L[PYT!,`m$raHmIJ^fiiY&Zt]-qJ');
+define('LOGGED_IN_KEY',    '=!_8N(BC7u50VyJ[`D6rxkLy<)xyoRWPXh~bh|1kj.#=+wTUZAu~tjh#zoZYI$RL');
+define('NONCE_KEY',        '; jfwr!w:Or88gh-Frd:`3pPC%!k2e*nM)XPlY2Bc#}KDc|c{;|2g;x=;ToY`gXc');
+define('AUTH_SALT',        '^uknp<X}]xIg6+o]78[5-zpnE{r3_EnDc#Ct-_OOtbxTf|!~%lL$;QwIz6CsIe#w');
+define('SECURE_AUTH_SALT', 'jA|l0P{zczZZh)+xs^PyV0;+v>qzzv:{mvOb|6Q55v|3M+i:7UInD /n?RmY[s@D');
+define('LOGGED_IN_SALT',   '>FFo#(g^[|IIq >4#(#J=*-T|-~;3 k<5#V;L6{<G+KVQfW_uDTud#Ib`+tbF32I');
+define('NONCE_SALT',       '/;FsY5biIFN(D!n&<#dLvfJ]q_+>}|6+(6+KFa#=JK-+Xd0YBo#}go}`cbA2T~%-');
 
 /**#@-*/
 
@@ -85,3 +85,6 @@ if ( !defined('ABSPATH') )
 
 /** 设置WordPress变量和包含文件。 */
 require_once(ABSPATH . 'wp-settings.php');
+
+// 关闭自动更新
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
