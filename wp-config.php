@@ -15,16 +15,16 @@
 
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress数据库的名称 */
-define('DB_NAME', 'mp');
+define('DB_NAME', 'cf_f1751ec3_6e75_4543_939c_dd0f16830f53');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'root');
+define('DB_USER', 'I2HMiLNooInb013t');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', '6399998');
+define('DB_PASSWORD', '8unZ0lFsxJQ4wECN');
 
 /** MySQL主机 */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '10.9.1.188');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
