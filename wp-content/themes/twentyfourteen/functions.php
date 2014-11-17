@@ -513,3 +513,34 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
+// ssl的gravatar头像
+function get_ssl_avatar($avatar) {
+   $avatar = preg_replace('/.*\/avatar\/(.*)\?s=([\d]+)&.*/','<img src="https://secure.gravatar.com/avatar/$1?s=$2" class="avatar avatar-$2" height="$2" width="$2">',$avatar);
+   return $avatar;
+}
+// add_filter('get_avatar', 'get_ssl_avatar');
+
+// 利用多说缓存头像
+function duoshuo_avatar($avatar) {
+    $avatar = str_replace(array("www.gravatar.com","0.gravatar.com","1.gravatar.com","2.gravatar.com"),"gravatar.duoshuo.com",$avatar);
+    return $avatar;
+}
+add_filter( 'get_avatar', 'duoshuo_avatar', 10, 3 );
+
+// 本地缓存gravatar
+function my_avatar($avatar) {
+  	$tmp = strpos($avatar, 'http');
+  	$g = substr($avatar, $tmp, strpos($avatar, "'", $tmp) - $tmp);
+  	$tmp = strpos($g, 'avatar/') + 7;
+  	$f = substr($g, $tmp, strpos($g, "?", $tmp) - $tmp);
+  	$w = get_bloginfo('wpurl');
+  	$e = ABSPATH .'avatar/'. $f .'.jpg';
+  	$t = 1209600; //設定14天, 單位:秒
+  	if ( !is_file($e) || (time() - filemtime($e)) > $t ) { //當頭像不存在或文件超過14天才更新
+    	copy(htmlspecialchars_decode($g), $e);
+  	} else  $avatar = strtr($avatar, array($g => $w.'/avatar/'.$f.'.jpg'));
+  	if (filesize($e) < 500) copy($w.'/avatar/default.jpg', $e);
+  	return $avatar;
+}
+add_filter('get_avatar', 'my_avatar');

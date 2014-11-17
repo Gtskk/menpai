@@ -11,7 +11,9 @@
 	.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
 	.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=2.0&services=true"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
 </head>
 
 <body onload="initMap();">
@@ -47,7 +49,73 @@
 		var markersArr = markersParam.split(',');
 		var point = new BMap.Point(markersArr[0], markersArr[1]);
 		var marker = new BMap.Marker(point);
+
+		marker.enableDragging(); //标记开启拖拽  
+  
+		var gc = new BMap.Geocoder();//地址解析类  
+		//添加标记拖拽监听  
+		marker.addEventListener("dragend", function(e){  
+		    //获取地址信息  
+		    gc.getLocation(e.point, function(rs){  
+		        showLocationInfo(e.point, rs);  
+		    });  
+		});
+
+		//添加标记点击监听  
+		marker.addEventListener("click", function(e){  
+		   	gc.getLocation(e.point, function(rs){  
+		        showLocationInfo(e.point, rs);  
+		    });  
+		}); 
+
+		/*//创建检索信息窗口对象
+	    var searchInfoWindow = null;
+		searchInfoWindow = new BMapLib.SearchInfoWindow(map, '', {
+				title  : "百度大厦",      //标题
+				width  : 290,             //宽度
+				height : 105,              //高度
+				panel  : "panel",         //检索结果面板
+				enableAutoPan : true,     //自动平移
+				searchTypes   :[
+					BMAPLIB_TAB_SEARCH,   //周边检索
+					BMAPLIB_TAB_TO_HERE,  //到这里去
+					BMAPLIB_TAB_FROM_HERE //从这里出发
+				]
+			});  
+		marker.addEventListener("click", function(e){
+		    searchInfoWindow.open(marker);
+	    });*/
+
 		map.addOverlay(marker); // 将标注添加到地图中
+
+		//显示地址信息窗口  
+		function showLocationInfo(pt, rs){  
+		    var opts = {  
+		      width : 250,     //信息窗口宽度  
+		      height: 100,     //信息窗口高度  
+		      title : ""  //信息窗口标题  
+		    }  
+		      
+		    var addComp = rs.addressComponents;  
+		    var addr = "<br />" + addComp.province + ", " + addComp.city + addComp.district + addComp.street + addComp.streetNumber;
+
+		    //创建检索信息窗口对象
+		    var searchInfoWindow = null;
+			searchInfoWindow = new BMapLib.SearchInfoWindow(map, addr, {
+					title  : addComp.province,      //标题
+					width  : 250,             //宽度
+					height : 30,              //高度
+					panel  : "panel",         //检索结果面板
+					enableAutoPan : true,     //自动平移
+					searchTypes   :[
+						BMAPLIB_TAB_SEARCH,   //周边检索
+						BMAPLIB_TAB_TO_HERE,  //到这里去
+						BMAPLIB_TAB_FROM_HERE //从这里出发
+					]
+				});
+			searchInfoWindow.open(marker); 
+		}  
+
 	}
 
 	//创建地图函数：

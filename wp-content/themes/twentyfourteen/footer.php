@@ -23,6 +23,13 @@
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
+	<!-- JiaThis Button BEGIN -->
+	<script type="text/javascript">
+	var jiathis_config = {data_track_clickback:'true'};
+	</script>
+	<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?move=0&amp;uid=1407898571339227" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+
 	<?php wp_footer(); ?>
 </body>
 </html>
