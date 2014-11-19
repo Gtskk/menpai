@@ -23,7 +23,7 @@ class DX_Auto_Save_Images{
 	
 	//save post exterior images
 	function post_save_images( $content ){
-		if( ($_POST['save'] || $_POST['publish']) && ($_POST['DS_switch']!='not_save') ){
+		if( (isset($_POST['save']) && isset($_POST['publish'])) && ($_POST['save'] || $_POST['publish']) && ($_POST['DS_switch']!='not_save') ){
 			set_time_limit(240);
 			global $post;
 			$post_id=$post->ID;
@@ -138,6 +138,3 @@ class DX_Auto_Save_Images{
 
 //new
 new DX_Auto_Save_Images();
-
-//include theme
-if( !function_exists('_daxiawp_theme_menu_page') ) include_once( 'theme.php' );

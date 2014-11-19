@@ -57,7 +57,7 @@ if($head_font!='none' && !in_array($head_font, $fonts)):
 	array_push($fonts, $head_font);
 	function add_google_font(){
 		global $head_font;
-		wp_enqueue_style(str_replace(' ','-',$head_font), 'http://fonts.googleapis.com/css?family='.str_replace(' ','+',$head_font));
+		wp_enqueue_style(str_replace(' ','-',$head_font), get_template_directory_uri().'/assets/fonts/googlefont.css');
 	}
 	add_action('wp_enqueue_scripts','add_google_font');
 endif;

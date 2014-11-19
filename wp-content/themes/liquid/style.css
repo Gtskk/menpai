@@ -13,9 +13,9 @@
 	
 /** Base
 ================================================== **/	
-	body { background-color: #f5f5f5; background-image: url(images/bg/bg3.png); }
+	body { background-color: #f5f5f5; background-image: url(assets/images/bg/bg03.png); }
 	body.custom-bg { background-size: 100% 100%; background-attachment:fixed }
-	body.custom-bg.page-12 { background-image: url(images/bg/4.jpg);}
+	body.custom-bg.page-12 { background-image: url(assets/images/bg/4.jpg);}
 	 
 	.post-thumb-video { overflow:hidden}
 	.w-box {
