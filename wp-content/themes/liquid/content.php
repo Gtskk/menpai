@@ -4,7 +4,7 @@
     if(is_single() && is_main_query()){
 		$lightbox = rwmb_meta( 'tu_lightbox');
         if($lightbox!='') {
-             if(eregi('map', $lightbox) == true) $format = '&format=map';
+             if(preg_match('/map/i', $lightbox) == true) $format = '&format=map';
              else $format = '';
              echo tu_post_thumb('class=popup-link-video'.$format, $lightbox);
         } else {
