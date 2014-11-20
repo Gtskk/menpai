@@ -218,4 +218,32 @@ function my_avatar($avatar) {
   	return $avatar;
 }
 add_filter('get_avatar', 'my_avatar');
+
+/**
+ * 添加/移除 WordPress 多站点网络的默认页面
+ */
+add_action('wpmu_new_blog', 'wpb_create_my_pages', 10, 2);
+ 
+function wpb_create_my_pages($blog_id, $user_id){
+  	switch_to_blog($blog_id);
+ 
+	// 创建一个新页面
+  	$page_id = wp_insert_post(array(
+	    'post_title'     => 'About',
+	    'post_name'      => 'about',
+	    'post_content'   => 'This is an about page. Feel free to edit or delete this page.',
+	    'post_status'    => 'publish',
+	    'post_author'    => $user_id, // or "1" (super-admin?)
+	    'post_type'      => 'page',
+	    'menu_order'     => 1,
+	    'comment_status' => 'closed',
+	    'ping_status'    => 'closed',
+ 	));  
+ 
+	// 查找和删除WordPress默认页面'Sample Page'
+	//如果是简体中文，你可能需要修改'Sample Page'为'示例页面'
+	$defaultPage = get_page_by_title( '示例页面' );
+	wp_delete_post( $defaultPage->ID );
+	  restore_current_blog();
+}
 ?>
