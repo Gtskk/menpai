@@ -32,6 +32,9 @@ define('DB_CHARSET', 'utf8');
 /** 数据库整理类型。如不确定请勿更改 */
 define('DB_COLLATE', '');
 
+/** 禁用WordPress主题以及插件的更新提示 */
+define('DISALLOW_FILE_MODS',true);
+
 /**#@+
  * 身份认证密钥与盐。
  *
