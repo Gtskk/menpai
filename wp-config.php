@@ -35,6 +35,15 @@ define('DB_COLLATE', '');
 /** 禁用WordPress主题以及插件的更新提示 */
 define('DISALLOW_FILE_MODS',true);
 
+/** 开启多站点 */
+define('WP_ALLOW_MULTISITE', true);
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'localhost');
+define('PATH_CURRENT_SITE', '/menpai/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+
 /**#@+
  * 身份认证密钥与盐。
  *
