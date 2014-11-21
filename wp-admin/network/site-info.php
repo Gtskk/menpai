@@ -45,10 +45,23 @@ if ( !can_edit_network( $details->site_id ) )
 $parsed = parse_url( $details->siteurl );
 $is_main_site = is_main_site( $id );
 
+// 获取GM社群ID
+switch_to_blog( $id );
+$gmID = get_option('gmID');
+restore_current_blog();
+
 if ( isset($_REQUEST['action']) && 'update-site' == $_REQUEST['action'] ) {
 	check_admin_referer( 'edit-site' );
 
 	switch_to_blog( $id );
+
+	// 配置GM社群ID
+	$gmID = intval($_POST['blog']['gmID']);
+	if(get_option('gmID') !== false){
+		update_option('gmID', $gmID);
+	}else{
+		add_option('gmID', $gmID);
+	}
 
 	if ( isset( $_POST['update_home_url'] ) && $_POST['update_home_url'] == 'update' ) {
 		$blog_address = esc_url_raw( $_POST['blog']['domain'] . $_POST['blog']['path'] );
@@ -142,6 +155,10 @@ if ( ! empty( $messages ) ) {
 			<?php
 				restore_current_blog();
 			} ?>
+		</tr>
+		<tr class="form-field">
+			<th scope="row"><?php _ex( 'GM社群ID', 'site' ) ?></th>
+			<td><input name="blog[gmID]" type="text" id="blog_gmID" value="<?php echo esc_attr( $gmID ) ?>" size="40" /></td>
 		</tr>
 		<tr class="form-field">
 			<th scope="row"><?php _ex( 'Registered', 'site' ) ?></th>

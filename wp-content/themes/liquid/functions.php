@@ -244,6 +244,5 @@ function wpb_create_my_pages($blog_id, $user_id){
 	//如果是简体中文，你可能需要修改'Sample Page'为'示例页面'
 	$defaultPage = get_page_by_title( '示例页面' );
 	wp_delete_post( $defaultPage->ID );
-	  restore_current_blog();
+	restore_current_blog();
 }
-?>

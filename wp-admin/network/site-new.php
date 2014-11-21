@@ -51,9 +51,12 @@ if ( isset($_REQUEST['action']) && 'add-site' == $_REQUEST['action'] ) {
 
 	$email = sanitize_email( $blog['email'] );
 	$title = $blog['title'];
+	$gmID = intval($blog['gmID']);
 
 	if ( empty( $domain ) )
 		wp_die( __( 'Missing or invalid site address.' ) );
+	if ( empty($gmID) || !is_numeric($gmID))
+		wp_die( 'GM社群ID为空或者不为数字' );
 	if ( empty( $email ) )
 		wp_die( __( 'Missing email address.' ) );
 	if ( !is_email( $email ) )
@@ -84,6 +87,12 @@ if ( isset($_REQUEST['action']) && 'add-site' == $_REQUEST['action'] ) {
 	if ( !is_wp_error( $id ) ) {
 		if ( !is_super_admin( $user_id ) && !get_user_option( 'primary_blog', $user_id ) )
 			update_user_option( $user_id, 'primary_blog', $id, true );
+
+		// 博客创建成功后配置GM社群ID
+		switch_to_blog( $id );
+		add_option('gmID', $gmID);
+		restore_current_blog();
+
 		$content_mail = sprintf( __( 'New site created by %1$s
 
 Address: %2$s
@@ -137,6 +146,10 @@ if ( ! empty( $messages ) ) {
 		<tr class="form-field form-required">
 			<th scope="row"><?php _e( 'Site Title' ) ?></th>
 			<td><input name="blog[title]" type="text" class="regular-text" title="<?php esc_attr_e( 'Title' ) ?>"/></td>
+		</tr>
+		<tr class="form-field form-required">
+			<th scope="row"><?php _e( 'GM社群ID' ) ?></th>
+			<td><input name="blog[gmID]" type="text" class="regular-text" title="<?php esc_attr_e( 'GM社群ID' ) ?>"/></td>
 		</tr>
 		<tr class="form-field form-required">
 			<th scope="row"><?php _e( 'Admin Email' ) ?></th>
