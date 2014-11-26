@@ -15,13 +15,13 @@
 
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress数据库的名称 */
-define('DB_NAME', 'cf_f1751ec3_6e75_4543_939c_dd0f16830f53');
+define('DB_NAME', 'cf_456bf570_fbb5_4cab_b5ea_6c32a92a0e63');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'I2HMiLNooInb013t');
+define('DB_USER', '2YF7YTOp9qNJDagS');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', '8unZ0lFsxJQ4wECN');
+define('DB_PASSWORD', 'xN1Zpn2tlpUEreRz');
 
 /** MySQL主机 */
 define('DB_HOST', '10.9.1.188');
