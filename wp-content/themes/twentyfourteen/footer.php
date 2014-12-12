@@ -1,35 +1,25 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains footer content and the closing of the #main and #page div elements.
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
-?>
+		<div id="footer">
+		    <div class="wrap">
+		     
+		       	<span class="f_logo">
+		       		<a href="">
+		       			<img src="<?php echo get_template_directory_uri(); ?>/images/i_24.jpg" alt="">
+		       		</a>
+		       	</span>
+		       	<span class="our">关注我们
+		       		<a href="" class="sina">
+		       			<img src="<?php echo get_template_directory_uri(); ?>/images/i_25.jpg" alt="">
+		       		</a>|<a href="" class="wei"><img src="<?php echo get_template_directory_uri(); ?>/images/i_27.jpg" alt=""></a>
+		       	</span>
+		       	<span class="contact">
+		       		<a href="">赞助商入口</a>|<a href="">联系我们</a>
+		       	</span>
+		       	<div class="copyright">Copyright © 2014 mempie     南京一门一派网络科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;苏ICP 1122334455</div>
+		     
+		     </div>
+		    
+		</div>
 
-		</div><!-- #main -->
-
-		<footer id="colophon" class="site-footer" role="contentinfo">
-
-			<?php get_sidebar( 'footer' ); ?>
-
-			<div class="site-info">
-				<?php do_action( 'twentyfourteen_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyfourteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfourteen' ), 'WordPress' ); ?></a>
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
-	</div><!-- #page -->
-
-	<!-- JiaThis Button BEGIN -->
-	<script type="text/javascript">
-	var jiathis_config = {data_track_clickback:'true'};
-	</script>
-	<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?move=0&amp;uid=1407898571339227" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-
-	<?php wp_footer(); ?>
-</body>
+		<?php wp_footer(); ?>
+	</body>
 </html>
