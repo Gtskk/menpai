@@ -45,6 +45,7 @@ get_header(); ?>
 
     <?php
         $conn = mysqli_connect('112.124.33.98', 'root', 'Root1234', 'mempai') or die('数据库连接错误');
+        $conn->set_charset('utf8');
         $query="select count(*) from web_data";
         $result=$conn->query($query);
         $row = mysqli_fetch_array($result);
@@ -136,8 +137,8 @@ get_header(); ?>
 </div>
 <?php else:?>
 <div id="content" class="activity">
-   	<h1 class="f36">门派，一款集体主义的APP</h1>
-   	<h2 class="f28">YOUY WORLD, YOUR GUYS</h2>
+    <h1 class="f36">门派，一款集体主义的APP</h1>
+    <h2 class="f28">YOUY WORLD, YOUR GUYS</h2>
    
     <?php
         $sticky = get_option('sticky_posts');
@@ -166,25 +167,25 @@ get_header(); ?>
     </div>
     <?php endif;wp_reset_postdata();?>
 
-	<?php if ( have_posts() ) : ?>
+    <?php if ( have_posts() ) : ?>
     <div class="col3 clear">
         <ul id="post_container">
-    	<?php while ( have_posts() ) : the_post();?>
-           	<li class="post">
-             	<div class="pic">
-             		<a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(358, 279));?></a>
-             	</div>
+        <?php while ( have_posts() ) : the_post();?>
+            <li class="post">
+                <div class="pic">
+                    <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(358, 279));?></a>
+                </div>
                  
                 <div class="text">
-                 	<h3><?php the_title();?></h3>
-                 	<?php the_excerpt();?>
-                 	<?php
-						// Show an optional term description.
-						/*$term_description = term_description();
-						if ( ! empty( $term_description ) ) :
-							printf( '<div class="taxonomy-description">%s</div>', $term_description );
-						endif;*/
-					?>
+                    <h3><?php the_title();?></h3>
+                    <?php the_excerpt();?>
+                    <?php
+                        // Show an optional term description.
+                        /*$term_description = term_description();
+                        if ( ! empty( $term_description ) ) :
+                            printf( '<div class="taxonomy-description">%s</div>', $term_description );
+                        endif;*/
+                    ?>
                     <?php
                         $tags = get_the_tags();
                         $tag = '';
@@ -194,7 +195,7 @@ get_header(); ?>
                             }
                         }
                     ?>
-                 	<div class="date">
+                    <div class="date">
                         <?php if($tag):?>
                         <a href=""<?php if($tag == '活动精选'):?> class="g"<?php endif;?>>
                             <?php echo $tag;?>
@@ -206,22 +207,22 @@ get_header(); ?>
                  
                 
                 <div class="qun">
-                   	<p>参与社群：
-    					<span><?php echo get_post_meta($post->ID, '参与社群', true);?></span>
-    				</p>
-                   	<p>赞助商：
-    					<span><?php echo get_post_meta($post->ID, '赞助商', true);?></span></p>
+                    <p>参与社群：
+                        <span><?php echo get_post_meta($post->ID, '参与社群', true);?></span>
+                    </p>
+                    <p>赞助商：
+                        <span><?php echo get_post_meta($post->ID, '赞助商', true);?></span></p>
                 </div>
-           	</li>
-           	
+            </li>
+            
         <?php endwhile;?>
         </ul>
     </div>
     <?php 
-    	// Previous/next page navigation.
-		twentyfourteen_paging_nav();
-	?>
-	<?php endif;?>
+        // Previous/next page navigation.
+        twentyfourteen_paging_nav();
+    ?>
+    <?php endif;?>
 </div>
 <?php endif;?>
 
