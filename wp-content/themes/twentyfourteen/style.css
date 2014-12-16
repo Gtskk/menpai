@@ -1,0 +1,276 @@
+﻿body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;font-weight: normal;}
+body,button,input,select,textarea{font:12px/1.6 \5FAE\8F6F\96C5\9ED1,Verdana, Helvetica, sans-serif;}/*5FAE\8F6F\96C5\9ED1  Verdana, Helvetica, sans-serif*/
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:12px;}
+ul,ol{list-style:none;}
+a:link,a:visited{color:#000;text-decoration:none;}
+a:hover,a:active{color:#000;text-decoration:none;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* 清理浮动 */
+.clear:after {
+visibility:hidden;
+display:block;
+font-size:0;
+content:" ";
+clear:both;
+height:0;
+}
+.clear {
+zoom:1; /* for IE6 IE7 */
+}
+
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+
+.mt8{margin-top:8px}
+.mt12{margin-top:12px}
+.mt15{margin-top:15px}
+.mb10{margin-bottom:10px}
+
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f22{font-size:22px;}
+.f28{font-size:28px;}
+.f36{font-size:36px;}
+.f40{font-size:40px;}
+
+.cyan{ color:#00c8c8 !important;}
+.green{color:#5db74e !important;}
+.purple{ color:#5161ab !important;}
+.orange{ color:#ff7a00 !important;}
+.blue{ color:#00aaff !important;}
+
+
+
+
+
+
+
+
+
+body{background: #fff;}
+.wrap{ width:1100px; margin:0 auto;}
+#header{background: #fff;border-bottom: 1px solid #e1e1e1;}
+.logo{margin: 15px 0px 0px 10px;float: left;display: inline;}
+.menu{float: right;display: inline;margin-top: 40px;}
+.menu li{display: inline;float: left;}
+.menu li a{font-size: 14px; color:#666; margin:0px 0px 0px 60px; }
+.menu li a:hover, .menu li.current-menu-item a{ color:#00c8c8}
+
+
+
+
+
+
+
+#content{ width:1100px; margin:0 auto;}
+#content h1{ color:#646464;text-align: center; margin:40px 0px 40px 0px;}
+#content h2{ color:#c8c8c8;text-align: center; margin:0px 0px 40px 0px;}
+
+/*活动*/
+.banner{margin-bottom: 60px;}
+.flexslider {
+  margin-bottom: 60px;
+}
+#content .flexslider a h2{
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 1092px;
+  font-size: 30px;
+  text-align: left;
+  margin: 10px 0 20px 40px;
+}
+.col3.spec ul{float: left;display: inline; width:356px;margin-right: 13px;
+}
+ul#post_container{margin-left: -10px;}
+.col3 ul li{border-bottom: #e0dfdf 1px solid;margin-bottom: 15px;background: #fff;
+-webkit-box-shadow:0px 2px 5px #999;
+-moz-box-shadow:0px 2px 5px #999 ;
+box-shadow:0px 2px 5px #999 ;
+overflow:hidden;
+width: 357px;
+}
+ul#post_container li{width: 360px;margin-left: 10px;}
+.col3 .text{line-height: 2em;font-size: 14px; padding:20px; color:#969696;}
+.col3 h3{font-size: 22px;font-weight: normal; color:#666; margin:10px 0px;}
+.col3 .date{ text-align:right;font-size: 12px;}
+.col3 .date a{ padding:1px 6px; background: #00c8c8; color:#fff;margin-right: 10px;}
+.col3 .date a.g{background: #ff8200;}
+.col3 .qun{padding:10px 20px;color:#969696;border-top: 1px solid #e6e6e6;}
+.col3 .qun p{padding:5px 0px;}
+.col3 .qun span{display: block;}
+
+
+
+
+
+
+
+
+/*首页*/
+.index .slide{ background:url(images/ii_02.jpg) no-repeat center; height:704px;}
+.index .col3 ul{ border:#e6e6e6 1px solid;}
+.index .col3 li{text-align: center;margin-bottom: 0; overflow-x:hidden;}
+.index .col3 h3{}
+.index .col3 h3 em{font-size: 14px;display: block;}
+.index .col3 p{ text-align:left; color:#999; padding:20px 50px;font-size: 14px;line-height: 1.8em;}
+.download{text-align: center;margin-top: 100px;background:#fff; height:759px;text-align: left;}
+.download .wrap{background:#fff url(images/ii_23.jpg) no-repeat center right;height:759px;}
+.download h1{ color:#646464; padding:200px 0px 0px 50px;line-height:1.2em;}
+.download h2{ color:#969696; margin:20px 0px 0px 50px;}
+.download a.down_btn{ margin:50px 0px 0px 50px;display: block;}
+
+
+
+
+/*社群*/
+
+   .org{}
+.org .banner{margin-bottom: 60px;}
+	.org .qlist li{ margin:40px 0px;}
+	.org .qlist dl{float: left;display: inline;}
+	.org .qlist dt{float: left;}
+	.org .qlist dd{font-size: 15px; color:#999; padding:3px 0px 0px 10px;margin-left:75px;}
+	.org .qlist dd strong{font-weight: normal; color:#333;margin-right: 10px;font-size: 19px;}
+	.org .qlist li p{float: right;display: inline; width:550px;font-size: 14px; color:#999;margin-top: 10px;}
+	.pages{text-align: center;color:#999; margin:40px 0px;}
+	.pages a, .pages span{ padding:5px 10px; border:#ccc 1px solid; color:#999;margin: 0px 2px;}
+  .qlist .clear dl dt a img{border-radius: 66px;-webkit-border-radius:66px;}
+	
+
+/*点开*/
+.details{padding-top: 60px;}
+
+.article{
+	float: left;display: inline;
+	width:735px;
+	
+	padding-right: 35px;
+	border-right:1px solid #CCCCCC;
+	text-align:left;
+	
+}
+#content.details .article h1{text-align:left;font-size: 36px;font-weight: bold; margin:0;}
+#content.details .article h2{text-align:left;font-size: 20px; color:#999;}
+
+
+.details p{font-size:18px ; margin:20px 0px; color:#666;}
+.details .date{ text-align:right; padding:10px;border-bottom: 1px solid #ccc; color:#999;font-size:14px;}
+
+.details .recommend{
+	padding:0px 5px;	
+	border-top:#ccc 1px solid;
+}
+.recommend .t{font-size: 16px; color:#666; margin:15px 0px;}
+.recommend li{float: left;display: inline; width:228px;font-size: 16px; color:#666;margin-bottom: 40px;margin-right: 18px;}
+.recommend li img{margin-bottom: 10px;}
+
+
+.aside{
+	float: right;
+	width:300px;
+}
+.aside .t{font-size: 14px; color:#fff;text-align: center; padding:15px;}
+.aside .er .t{background:#00c8c8;}
+.aside .new .t{background:#5078c8 ;}
+.aside .er{background: #fff; border:#ccc 1px solid;text-align: center;font-size: 12px;}
+.aside .er .b{padding-top: 30px;}
+.aside .er p{font-size: 14px;}
+.aside .new{background: #fff;border:#ccc 1px solid;margin-top: 50px;}
+.aside .new .b{ padding:0px 20px 20px 20px;}
+.aside .new .b dl{margin: 20px 0px;}
+.aside .new .b dd{font-size: 12px; color:#999;}
+.aside .new .b h4{font-size: 20px; color:#666;margin-top: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*APP*/
+
+      .app{background: #f0f0f0;}
+.app #content{ width:auto;}
+.area2,.area3,.area4{background:#f0f0f0;}
+.app .banner{background:#f0f0f0; margin:0; padding-bottom: 100px;}
+.app .slide{ background: url(images/app_02.jpg) no-repeat center; height:686px;}
+
+#content .area1 h1,#content .area1 h2{text-align:left;}
+.area1 .wrap{background:url(images/app2_05.png) no-repeat right center; height:680px;border-bottom:#D8D8D8 1px solid; }
+.area1 table{font-size: 18px; color:#666;}
+.area1 h1{}
+.area1 h2{}
+
+
+  .app #content .area2 h1{ padding:100px 0px 0px 0px; margin:0;}
+  .app #content .area2 h2{ color:#666; margin:10px 0px 80px 0px;}
+  .area2 .wrap{ padding:0px 60px;}
+  .area2 dl{float: left;display: inline;text-align: center; width:24.9%;}
+  .area2 dd{font-size:16px; color:#666;
+ }
+  .area2 dd.f22{font-size: 22px; padding:10px 0px;}
+  
+  
+  .area3 .wrap{ background:url(images/APP_44.png) no-repeat right top; height:325px;}
+ 
+  .app #content .area3 h1{ text-align:left; margin:0;}
+  .app #content .area3 h2{ text-align:left; margin:10px 0px 30px 0px; color:#666;}
+  .area3 .text{ color:#666;}
+  
+  
+  .area4 .wrap{background:url(images/app_21.png) no-repeat center left; height:500px; padding:80px 0px 120px 0px;border-bottom:#D8D8D8 1px solid;}
+  .area4 dl{font-size: 16px; color:#666;float: right; clear:both;margin:30px 0px 30px 0px; width:400px;}
+  
+  
+  .area5 { margin:0px 0px 100px 0px;}
+  .area5 .pic{margin-bottom: 100px;}
+  .area5 .fl{text-align: center;font-size: 20px; color:#666;}
+  .area5 .fl table{line-height: 2.5em;}
+  
+  .app #content .area5 h1{ padding:60px 0px 50px 0px;}
+  .area5 .fr li{ padding:10px 0px 10px 55px; font-size: 22px; color:#666;}
+  .area5 .fr li.i1{ background:url(images/app2_66.png) no-repeat center left;}
+  .area5 .fr li.i2{background:url(images/app2_67.png) no-repeat center left;}
+  .area5 .fr li.i3{background:url(images/app2_74.png) no-repeat center left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{background: #fff;font-size:18px; color:#666; padding:20px 0px 30px 0px;}
+#footer a{color:#666;}
+#footer img{ vertical-align:middle;}
+.f_logo{margin-right: 30px;}
+.our{}
+.our a{ padding:0px 10px;}
+.contact a{ padding:0px 10px;}
+.copyright{font-size: 12px;float: right;display: inline;padding-top: 5px;}

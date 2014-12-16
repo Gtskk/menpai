@@ -1,0 +1,2415 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Liquid v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-09-21 10:21:43+0000\n"
+"Last-Translator: kelly <info@presslayer.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: comments.php:2
+#@ presslayer
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:11
+#@ presslayer
+msgid "One comment"
+msgstr ""
+
+#: comments.php:12
+#@ presslayer
+msgid " comments"
+msgstr ""
+
+#: comments.php:19
+#@ presslayer
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:20
+#@ presslayer
+msgid "Newer Comments"
+msgstr ""
+
+#: content-aside.php:7
+#: content-bottom.php:5
+#: functions.php:269
+#: post-control.php:7
+#@ presslayer
+msgid "Read more"
+msgstr ""
+
+#: content-aside.php:8
+#: content-audio.php:32
+#: content-gallery.php:22
+#: content-video.php:24
+#: content.php:20
+#@ presslayer
+#@ framework
+msgid "Pages:"
+msgstr ""
+
+#: content-none.php:3
+#@ presslayer
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:7
+#@ presslayer
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr ""
+
+#: footer.php:20
+#@ presslayer
+msgid "by"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:196
+#@ tgmpa
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:197
+#@ tgmpa
+msgid "Install Plugins"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:198
+#, php-format
+#@ tgmpa
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:199
+#@ tgmpa
+msgid "Something went wrong."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:200
+#, php-format
+#@ presslayer
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:201
+#, php-format
+#@ presslayer
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:202
+#, php-format
+#@ presslayer
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:203
+#, php-format
+#@ presslayer
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:204
+#, php-format
+#@ presslayer
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:205
+#, php-format
+#@ presslayer
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:206
+#, php-format
+#@ presslayer
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:207
+#, php-format
+#@ presslayer
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:208
+#@ presslayer
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:209
+#@ presslayer
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:210
+#@ tgmpa
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:211
+#@ tgmpa
+msgid "Return to the dashboard"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:212
+#: functions/class-tgm-plugin-activation.php:1951
+#@ tgmpa
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:214
+#, php-format
+#@ tgmpa
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:215
+#@ tgmpa
+msgid "Dismiss this notice"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:544
+#: functions/class-tgm-plugin-activation.php:2168
+#@ tgmpa
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1174
+#@ tgmpa
+msgid "Private Repository"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1177
+#@ tgmpa
+msgid "Pre-Packaged"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1182
+#@ tgmpa
+msgid "WordPress Repository"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1185
+#@ tgmpa
+msgid "Required"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1185
+#@ tgmpa
+msgid "Recommended"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1188
+#@ tgmpa
+msgid "Not Installed"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1190
+#@ tgmpa
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1290
+#: functions/class-tgm-plugin-activation.php:1398
+#@ tgmpa
+msgid "Install"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1312
+#: functions/class-tgm-plugin-activation.php:1399
+#@ tgmpa
+msgid "Activate"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1361
+#, php-format
+#@ tgmpa
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1377
+#@ tgmpa
+msgid "Plugin"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1378
+#@ tgmpa
+msgid "Source"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1379
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:43
+#: page-builder/blocks/aq-blog-block.php:49
+#@ tgmpa
+#@ presslayer
+msgid "Type"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1380
+#@ tgmpa
+msgid "Status"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1508
+#@ tgmpa
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1616
+#@ tgmpa
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: functions/class-tgm-plugin-activation.php:1638
+#: functions/class-tgm-plugin-activation.php:213
+#@ tgmpa
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:1934
+#@ tgmpa
+msgid "Install package not available."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1935
+#, php-format
+#@ tgmpa
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1936
+#@ tgmpa
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1937
+#@ tgmpa
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1938
+#@ tgmpa
+msgid "Plugin install failed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1939
+#@ tgmpa
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1950
+#@ tgmpa
+msgid "Plugin activation failed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2064
+#@ tgmpa
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2065
+#, php-format
+#@ tgmpa
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2065
+#: functions/class-tgm-plugin-activation.php:2074
+#@ tgmpa
+msgid "Show Details"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2065
+#: functions/class-tgm-plugin-activation.php:2074
+#@ tgmpa
+msgid "Hide Details"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2066
+#@ tgmpa
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2067
+#, php-format
+#@ tgmpa
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2071
+#@ tgmpa
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2072
+#, php-format
+#@ tgmpa
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2073
+#, php-format
+#@ tgmpa
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2074
+#, php-format
+#@ tgmpa
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2075
+#@ tgmpa
+msgid "All installations have been completed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2076
+#, php-format
+#@ tgmpa
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/lib_functions.php:12
+#@ presslayer
+msgctxt "post time format"
+msgid "l, F j, Y, g:i a"
+msgstr ""
+
+#: functions/lib_functions.php:17
+#@ presslayer
+msgid ", "
+msgstr ""
+
+#: functions/lib_functions.php:27
+#@ presslayer
+msgid "Leave a comment"
+msgstr ""
+
+#: functions/lib_functions.php:27
+#@ presslayer
+msgid "1 comment"
+msgstr ""
+
+#: functions/lib_functions.php:27
+#@ presslayer
+msgid "% comments"
+msgstr ""
+
+#: functions/lib_functions.php:27
+#@ presslayer
+msgid "Comments are off"
+msgstr ""
+
+#: functions/lib_functions.php:40
+#: functions/lib_functions.php:143
+#: functions/lib_functions.php:163
+#: templates/template-trans.php:25
+#@ presslayer
+msgid "Edit"
+msgstr ""
+
+#: functions/lib_functions.php:98
+#@ presslayer
+msgid "Welcome"
+msgstr ""
+
+#: functions/lib_functions.php:106
+#@ presslayer
+msgid "Dashboard"
+msgstr ""
+
+#: functions/lib_functions.php:107
+#@ presslayer
+msgid "Your Profile"
+msgstr ""
+
+#: functions/lib_functions.php:108
+#@ presslayer
+msgid "Logout"
+msgstr ""
+
+#: functions/lib_functions.php:117
+#@ presslayer
+msgid "Username"
+msgstr ""
+
+#: functions/lib_functions.php:119
+#: functions/mb_demoBK.php:61
+#@ presslayer
+#@ meta-box
+msgid "Password"
+msgstr ""
+
+#: functions/lib_functions.php:122
+#@ presslayer
+msgid "Log in"
+msgstr ""
+
+#: functions/lib_functions.php:123
+#@ presslayer
+msgid "Remember Me"
+msgstr ""
+
+#: functions/lib_functions.php:128
+#@ presslayer
+msgid "Lost your password?"
+msgstr ""
+
+#: functions/lib_functions.php:143
+#@ presslayer
+msgid "Pingback:"
+msgstr ""
+
+#: functions/lib_functions.php:156
+#@ presslayer
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions/lib_functions.php:159
+#@ presslayer
+msgid "at"
+msgstr ""
+
+#: functions/lib_functions.php:162
+#@ presslayer
+msgid "Reply"
+msgstr ""
+
+#: functions/lib_functions.php:199
+#@ presslayer
+msgid "toptic"
+msgstr ""
+
+#: functions/lib_functions.php:212
+#: functions/lib_functions.php:235
+#: post-control.php:4
+#@ presslayer
+msgid "Share"
+msgstr ""
+
+#: functions/lib_functions.php:278
+#@ presslayer
+msgid "Drag & Drop Widgets Here"
+msgstr ""
+
+#: functions/lib_functions.php:326
+#@ default
+msgctxt "widget"
+msgid "Edit"
+msgstr ""
+
+#: functions/lib_functions.php:327
+#@ default
+msgctxt "widget"
+msgid "Add"
+msgstr ""
+
+#: functions/lib_functions.php:339
+#@ presslayer
+msgid "There are no options for this widget."
+msgstr ""
+
+#: functions/lib_functions.php:347
+#: page-builder/classes/class-aq-block.php:149
+#@ presslayer
+#@ aqpb-l10n
+msgid "Delete"
+msgstr ""
+
+#: functions/lib_functions.php:348
+#: page-builder/classes/class-aq-block.php:149
+#@ presslayer
+#@ aqpb-l10n
+msgid "Close"
+msgstr ""
+
+#: functions/lib_functions.php:351
+#@ presslayer
+msgid "Save"
+msgstr ""
+
+#: functions/mb_demoBK.php:11
+#@ meta-box
+msgid "Standard Fields"
+msgstr ""
+
+#: functions/mb_demoBK.php:18
+#: page-builder/blocks/aq-text-block.php:8
+#@ meta-box
+#@ aqpb-l10n
+msgid "Text"
+msgstr ""
+
+#: functions/mb_demoBK.php:20
+#@ meta-box
+msgid "Text description"
+msgstr ""
+
+#: functions/mb_demoBK.php:22
+#@ meta-box
+msgid "Default text value"
+msgstr ""
+
+#: functions/mb_demoBK.php:26
+#@ meta-box
+msgid "Checkbox"
+msgstr ""
+
+#: functions/mb_demoBK.php:32
+#@ meta-box
+msgid "Radio"
+msgstr ""
+
+#: functions/mb_demoBK.php:36
+#: functions/mb_demoBK.php:45
+#: functions/mb_demoBK.php:186
+#: functions/mb_demoBK.php:231
+#@ meta-box
+msgid "Label1"
+msgstr ""
+
+#: functions/mb_demoBK.php:37
+#: functions/mb_demoBK.php:46
+#: functions/mb_demoBK.php:187
+#: functions/mb_demoBK.php:232
+#@ meta-box
+msgid "Label2"
+msgstr ""
+
+#: functions/mb_demoBK.php:41
+#: functions/mb_demoBK.php:226
+#@ meta-box
+msgid "Select"
+msgstr ""
+
+#: functions/mb_demoBK.php:50
+#: functions/mb_demoBK.php:237
+#@ meta-box
+msgid "Select an Item"
+msgstr ""
+
+#: functions/mb_demoBK.php:57
+#@ meta-box
+msgid "Hidden value"
+msgstr ""
+
+#: functions/mb_demoBK.php:67
+#: options.php:468
+#@ meta-box
+#@ presslayer
+msgid "Textarea"
+msgstr ""
+
+#: functions/mb_demoBK.php:68
+#@ meta-box
+msgid "Textarea description"
+msgstr ""
+
+#: functions/mb_demoBK.php:85
+#@ meta-box
+msgid "Password is required"
+msgstr ""
+
+#: functions/mb_demoBK.php:86
+#@ meta-box
+msgid "Password must be at least 7 characters"
+msgstr ""
+
+#: functions/mb_demoBK.php:94
+#@ meta-box
+msgid "Advanced Fields"
+msgstr ""
+
+#: functions/mb_demoBK.php:100
+#@ meta-box
+msgid "Heading"
+msgstr ""
+
+#: functions/mb_demoBK.php:105
+#: page-builder/blocks/aq-slider-block.php:6
+#@ meta-box
+#@ aqpb-l10n
+msgid "Slider"
+msgstr ""
+
+#: functions/mb_demoBK.php:110
+#@ meta-box
+msgid "$"
+msgstr ""
+
+#: functions/mb_demoBK.php:111
+#@ meta-box
+msgid " USD"
+msgstr ""
+
+#: functions/mb_demoBK.php:122
+#@ meta-box
+msgid "Number"
+msgstr ""
+
+#: functions/mb_demoBK.php:131
+#@ meta-box
+msgid "Date picker"
+msgstr ""
+
+#: functions/mb_demoBK.php:137
+#@ meta-box
+msgid "(yyyy-mm-dd)"
+msgstr ""
+
+#: functions/mb_demoBK.php:138
+#@ meta-box
+msgid "yy-mm-dd"
+msgstr ""
+
+#: functions/mb_demoBK.php:146
+#@ meta-box
+msgid "Datetime picker"
+msgstr ""
+
+#: functions/mb_demoBK.php:160
+#@ meta-box
+msgid "Time picker"
+msgstr ""
+
+#: functions/mb_demoBK.php:175
+#@ meta-box
+msgid "Color picker"
+msgstr ""
+
+#: functions/mb_demoBK.php:181
+#@ meta-box
+msgid "Checkbox list"
+msgstr ""
+
+#: functions/mb_demoBK.php:192
+#@ meta-box
+msgid "Email"
+msgstr ""
+
+#: functions/mb_demoBK.php:194
+#@ meta-box
+msgid "Email description"
+msgstr ""
+
+#: functions/mb_demoBK.php:200
+#@ meta-box
+msgid "Range"
+msgstr ""
+
+#: functions/mb_demoBK.php:202
+#@ meta-box
+msgid "Range description"
+msgstr ""
+
+#: functions/mb_demoBK.php:211
+#: options/includes/class-options-sorter-ui.php:57
+#: options/includes/class-options-sorter-ui.php:98
+#@ meta-box
+#@ presslayer
+msgid "URL"
+msgstr ""
+
+#: functions/mb_demoBK.php:213
+#@ meta-box
+msgid "URL description"
+msgstr ""
+
+#: functions/mb_demoBK.php:219
+#: functions/meta_box.php:18
+#: functions/meta_box.php:29
+#@ meta-box
+#@ presslayer
+msgid "oEmbed"
+msgstr ""
+
+#: functions/mb_demoBK.php:221
+#@ meta-box
+msgid "oEmbed description"
+msgstr ""
+
+#: functions/mb_demoBK.php:241
+#@ meta-box
+msgid "Taxonomy"
+msgstr ""
+
+#: functions/mb_demoBK.php:255
+#@ meta-box
+msgid "Posts (Pages)"
+msgstr ""
+
+#: functions/mb_demoBK.php:271
+#@ meta-box
+msgid "WYSIWYG / Rich Text Editor"
+msgstr ""
+
+#: functions/mb_demoBK.php:276
+#@ meta-box
+msgid "WYSIWYG default value"
+msgstr ""
+
+#: functions/mb_demoBK.php:292
+#@ meta-box
+msgid "File Upload"
+msgstr ""
+
+#: functions/mb_demoBK.php:298
+#@ meta-box
+msgid "File Advanced Upload"
+msgstr ""
+
+#: functions/mb_demoBK.php:306
+#@ meta-box
+msgid "Image Upload"
+msgstr ""
+
+#: functions/mb_demoBK.php:312
+#@ meta-box
+msgid "Thickbox Image Upload"
+msgstr ""
+
+#: functions/mb_demoBK.php:318
+#@ meta-box
+msgid "Plupload Image Upload"
+msgstr ""
+
+#: functions/mb_demoBK.php:325
+#@ meta-box
+msgid "Image Advanced Upload"
+msgstr ""
+
+#: functions/meta_box.php:11
+#@ presslayer
+msgid "Video Options"
+msgstr ""
+
+#: functions/meta_box.php:20
+#@ presslayer
+msgid "Enter in a video URL that is compatible with WordPress's built-in oEmbed feature. <a href=\"http://codex.wordpress.org/Embeds\" target=\"_blank\">Learn More</a>"
+msgstr ""
+
+#: functions/meta_box.php:25
+#@ presslayer
+msgid "Video Thumbnail"
+msgstr ""
+
+#: functions/meta_box.php:30
+#: functions/meta_box.php:132
+#@ presslayer
+msgid "Lightbox"
+msgstr ""
+
+#: functions/meta_box.php:41
+#@ presslayer
+msgid "Audio Options"
+msgstr ""
+
+#: functions/meta_box.php:48
+#@ presslayer
+msgid "Audio File URL"
+msgstr ""
+
+#: functions/meta_box.php:50
+#@ presslayer
+msgid "The URL to the audio file."
+msgstr ""
+
+#: functions/meta_box.php:54
+#@ meta-box
+msgid "Audio Embed"
+msgstr ""
+
+#: functions/meta_box.php:66
+#@ presslayer
+msgid "Gallery Options"
+msgstr ""
+
+#: functions/meta_box.php:73
+#@ presslayer
+msgid "Upload images to gallery"
+msgstr ""
+
+#: functions/meta_box.php:77
+#@ presslayer
+msgid "Hold Ctrl + click to select multiple images. Maximum 20 images."
+msgstr ""
+
+#: functions/meta_box.php:85
+#@ presslayer
+msgid "Link Options"
+msgstr ""
+
+#: functions/meta_box.php:92
+#@ meta-box
+msgid "Link URL"
+msgstr ""
+
+#: functions/meta_box.php:105
+#@ presslayer
+msgid "Quote Options"
+msgstr ""
+
+#: functions/meta_box.php:112
+#@ meta-box
+msgid "Quote"
+msgstr ""
+
+#: functions/meta_box.php:124
+#@ presslayer
+msgid "Lightbox Options"
+msgstr ""
+
+#: functions/meta_box.php:134
+#@ presslayer
+msgid "Enter URL of videos or Google map. You can use all of these:"
+msgstr ""
+
+#: functions/tu_likepost.php:113
+#@ presslayer
+msgid "Like this post"
+msgstr ""
+
+#: functions/tu_likepost.php:118
+#@ presslayer
+msgid "You already liked this post"
+msgstr ""
+
+#: functions/widgets/accordion.php:10
+#@ presslayer
+msgid "Display widgets inside a accordion"
+msgstr ""
+
+#: functions/widgets/ads.php:5
+#@ presslayer
+msgid "Add small ads to your sidebar"
+msgstr ""
+
+#: functions/widgets/ads.php:6
+#@ presslayer
+msgid "&raquo; Small ads"
+msgstr ""
+
+#: functions/widgets/ads.php:58
+#: options/includes/class-options-sorter-ui.php:29
+#: options/includes/class-options-sorter-ui.php:77
+#: options/includes/class-options-sorter-ui.php:79
+#@ presslayer
+msgid "Title"
+msgstr ""
+
+#: functions/widgets/ads.php:63
+#@ presslayer
+msgid "Ads content"
+msgstr ""
+
+#: functions/widgets/flickr.php:5
+#: functions/widgets/post_in_pic.php:4
+#: functions/widgets/recent-posts.php:4
+#@ presslayer
+msgid "Show latest posts in picture"
+msgstr ""
+
+#: functions/widgets/flickr.php:6
+#@ presslayer
+msgid "&raquo; Flickr"
+msgstr ""
+
+#: functions/widgets/letter.php:37
+#@ presslayer
+msgid "Email address"
+msgstr ""
+
+#: functions/widgets/letter.php:38
+#@ presslayer
+msgid "Subscribe"
+msgstr ""
+
+#: functions/widgets/post_in_pic.php:5
+#@ presslayer
+msgid "&raquo; Post in Picture"
+msgstr ""
+
+#: functions/widgets/post_in_pic.php:23
+#@ PressLayer
+msgid "All posts"
+msgstr ""
+
+#: functions/widgets/post_in_pic.php:73
+#: functions/widgets/recent-posts.php:78
+#: index.php:19
+#@ presslayer
+msgid "Category"
+msgstr ""
+
+#: functions/widgets/post_in_pic.php:84
+#: functions/widgets/recent-posts.php:89
+#@ presslayer
+msgid "Number of posts to show"
+msgstr ""
+
+#: functions/widgets/recent-posts.php:5
+#@ presslayer
+msgid "&raquo; Recent Posts"
+msgstr ""
+
+#: functions/widgets/twitter.php:6
+#@ presslayer
+msgid "Display latest Tweets from Twitter."
+msgstr ""
+
+#: functions/widgets/twitter.php:7
+#@ presslayer
+msgid "&raquo; Tweets"
+msgstr ""
+
+#: functions/widgets/twitter.php:135
+#@ presslayer
+msgid "about"
+msgstr ""
+
+#: functions/widgets/twitter.php:135
+#@ presslayer
+msgid "ago"
+msgstr ""
+
+#: functions/widgets/twitter.php:255
+#@ presslayer
+msgid "Show Follow Button"
+msgstr ""
+
+#: functions/widgets/twitter.php:260
+#@ presslayer
+msgid "Show Account Info"
+msgstr ""
+
+#: functions/widgets/twitter.php:264
+#@ presslayer
+msgid "Show User Avatar"
+msgstr ""
+
+#: functions/widgets/twitter.php:269
+#@ presslayer
+msgid "Exclude replies"
+msgstr ""
+
+#: functions.php:220
+#: functions.php:239
+#: functions.php:254
+#@ presslayer
+msgid "Widgets in this area will be shown in the sidebar on the blog and regular posts."
+msgstr ""
+
+#: header.php:13
+#, php-format
+#@ PressLayer
+msgid "Page %s"
+msgstr ""
+
+#: header.php:45
+#@ presslayer
+msgid "NAVIGATION"
+msgstr ""
+
+#: header.php:69
+#@ presslayer
+msgid "Define your site menu"
+msgstr ""
+
+#: header.php:69
+#, php-format
+#@ presslayer
+msgid "Go to <a href=\"%s\" target=\"_blank\">Admin Menus</a> and define your menus"
+msgstr ""
+
+#: header.php:106
+#@ presslayer
+msgid "Search"
+msgstr ""
+
+#: index.php:19
+#@ presslayer
+msgid "Archive for the"
+msgstr ""
+
+#: index.php:23
+#@ presslayer
+msgid "Posts Tagged"
+msgstr ""
+
+#: index.php:27
+#: index.php:31
+#: index.php:35
+#@ presslayer
+msgid "Archive for"
+msgstr ""
+
+#: index.php:39
+#@ presslayer
+msgid "Author Archive"
+msgstr ""
+
+#: index.php:43
+#@ presslayer
+msgid "Search Results"
+msgstr ""
+
+#: index.php:47
+#@ presslayer
+msgid "Recent Posts"
+msgstr ""
+
+#: options/includes/class-options-framework-admin.php:89
+#: options/includes/class-options-framework-admin.php:90
+#@ presslayer
+msgid "Theme Options"
+msgstr ""
+
+#: options/includes/class-options-framework-admin.php:204
+#@ presslayer
+msgid "Changelog"
+msgstr ""
+
+#: options/includes/class-options-framework-admin.php:204
+#@ presslayer
+msgid "Support Forum"
+msgstr ""
+
+#: options/includes/class-options-framework-admin.php:205
+#: options/includes/class-options-framework-admin.php:220
+#@ presslayer
+msgid "Save All Changes"
+msgstr ""
+
+#: options/includes/class-options-framework-admin.php:219
+#@ presslayer
+msgid "Restore Defaults"
+msgstr ""
+
+#: options/includes/class-options-framework-admin.php:219
+#@ presslayer
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: options/includes/class-options-framework-admin.php:249
+#@ presslayer
+msgid "Default options restored."
+msgstr ""
+
+#: options/includes/class-options-framework-admin.php:306
+#@ presslayer
+msgid "Options saved."
+msgstr ""
+
+#: options/includes/class-options-media-uploader.php:63
+#@ textdomain
+msgid "No file chosen"
+msgstr ""
+
+#: options/includes/class-options-media-uploader.php:66
+#: options/includes/class-options-media-uploader.php:119
+#: options/includes/class-options-sorter-ui.php:54
+#: options/includes/class-options-sorter-ui.php:95
+#@ textdomain
+#@ presslayer
+msgid "Upload"
+msgstr ""
+
+#: options/includes/class-options-media-uploader.php:68
+#: options/includes/class-options-media-uploader.php:120
+#@ textdomain
+msgid "Remove"
+msgstr ""
+
+#: options/includes/class-options-media-uploader.php:71
+#@ textdomain
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: options/includes/class-options-media-uploader.php:95
+#@ textdomain
+msgid "View File"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:238
+#@ textdomain
+msgid "No Repeat"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:239
+#@ textdomain
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:240
+#@ textdomain
+msgid "Repeat Vertically"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:241
+#@ textdomain
+msgid "Repeat All"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:254
+#@ textdomain
+msgid "Top Left"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:255
+#@ textdomain
+msgid "Top Center"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:256
+#@ textdomain
+msgid "Top Right"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:257
+#@ textdomain
+msgid "Middle Left"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:258
+#@ textdomain
+msgid "Middle Center"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:259
+#@ textdomain
+msgid "Middle Right"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:260
+#@ textdomain
+msgid "Bottom Left"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:261
+#@ textdomain
+msgid "Bottom Center"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:262
+#@ textdomain
+msgid "Bottom Right"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:275
+#@ textdomain
+msgid "Scroll Normally"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:276
+#@ textdomain
+msgid "Fixed in Place"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:350
+#@ textdomain
+msgid "Normal"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:351
+#@ textdomain
+msgid "Italic"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:352
+#@ textdomain
+msgid "Bold"
+msgstr ""
+
+#: options/includes/class-options-sanitization.php:353
+#@ textdomain
+msgid "Bold Italic"
+msgstr ""
+
+#: options/includes/class-options-sorter-ui.php:15
+#: options.php:665
+#@ presslayer
+msgid "Apply to"
+msgstr ""
+
+#: options/includes/class-options-sorter-ui.php:53
+#: options/includes/class-options-sorter-ui.php:94
+#@ presslayer
+msgid "Image"
+msgstr ""
+
+#: options/includes/class-options-sorter-ui.php:60
+#: options/includes/class-options-sorter-ui.php:100
+#@ presslayer
+msgid "Content"
+msgstr ""
+
+#: options/includes/class-options-sorter-ui.php:65
+#: options/includes/class-options-sorter-ui.php:102
+#: page-builder/blocks/aq-contact-block.php:49
+#: page-builder/blocks/aq-text-block.php:40
+#@ presslayer
+#@ aqpb-l10n
+msgid "Automatically add paragraphs"
+msgstr ""
+
+#: options/includes/class-options-sorter-ui.php:73
+#@ presslayer
+msgid "Add More"
+msgstr ""
+
+#: options.php:61
+#@ presslayer
+msgid "One"
+msgstr ""
+
+#: options.php:62
+#@ presslayer
+msgid "Two"
+msgstr ""
+
+#: options.php:63
+#@ presslayer
+msgid "Three"
+msgstr ""
+
+#: options.php:64
+#@ presslayer
+msgid "Four"
+msgstr ""
+
+#: options.php:65
+#@ presslayer
+msgid "Five"
+msgstr ""
+
+#: options.php:70
+#@ presslayer
+msgid "French Toast"
+msgstr ""
+
+#: options.php:71
+#@ presslayer
+msgid "Pancake"
+msgstr ""
+
+#: options.php:72
+#@ presslayer
+msgid "Omelette"
+msgstr ""
+
+#: options.php:73
+#@ presslayer
+msgid "Crepe"
+msgstr ""
+
+#: options.php:74
+#@ presslayer
+msgid "Waffle"
+msgstr ""
+
+#: options.php:182
+#@ presslayer
+msgid "General Settings"
+msgstr ""
+
+#: options.php:187
+#@ presslayer
+msgid "Custom Logo"
+msgstr ""
+
+#: options.php:188
+#@ presslayer
+msgid "Upload your custom logo."
+msgstr ""
+
+#: options.php:193
+#@ presslayer
+msgid "Custom Mobile Logo"
+msgstr ""
+
+#: options.php:194
+#@ presslayer
+msgid "Upload your custom logo for mobile screen."
+msgstr ""
+
+#: options.php:199
+#@ presslayer
+msgid "Custom Favicon"
+msgstr ""
+
+#: options.php:200
+#@ presslayer
+msgid "Upload your custom favicon."
+msgstr ""
+
+#: options.php:217
+#@ presslayer
+msgid "Footer Widget"
+msgstr ""
+
+#: options.php:218
+#@ presslayer
+msgid "Check this box to enable Footer Widget."
+msgstr ""
+
+#: options.php:224
+#@ presslayer
+msgid "Switcher"
+msgstr ""
+
+#: options.php:225
+#@ presslayer
+msgid "Check this box to enable Switcher."
+msgstr ""
+
+#: options.php:231
+#@ presslayer
+msgid "Navigation"
+msgstr ""
+
+#: options.php:236
+#@ presslayer
+msgid "Sticky Navagation"
+msgstr ""
+
+#: options.php:237
+#@ presslayer
+msgid "Check this box to enable sticky navigation."
+msgstr ""
+
+#: options.php:256
+#@ presslayer
+msgid "Contact Page"
+msgstr ""
+
+#: options.php:257
+#@ presslayer
+msgid "Select a page to link"
+msgstr ""
+
+#: options.php:264
+#@ presslayer
+msgid "Slides Settings"
+msgstr ""
+
+#: options.php:270
+#@ presslayer
+msgid "Slides Categories"
+msgstr ""
+
+#: options.php:271
+#: options.php:494
+#@ presslayer
+msgid "Passed an array of categories with cat_ID and cat_name"
+msgstr ""
+
+#: options.php:279
+#: page-builder/blocks/aq-slider-block.php:115
+#@ presslayer
+msgid "Slideshow"
+msgstr ""
+
+#: options.php:280
+#: page-builder/blocks/aq-slider-block.php:116
+#@ presslayer
+msgid "Check this box to enable automatic slideshow for your slides."
+msgstr ""
+
+#: options.php:286
+#: page-builder/blocks/aq-slider-block.php:120
+#@ presslayer
+msgid "ControlNav"
+msgstr ""
+
+#: options.php:287
+#: page-builder/blocks/aq-slider-block.php:121
+#@ presslayer
+msgid "Check this box to enable the control navigation."
+msgstr ""
+
+#: options.php:293
+#@ presslayer
+msgid "Randomize"
+msgstr ""
+
+#: options.php:294
+#@ presslayer
+msgid "Check this box to enable the randomize feature for your slides."
+msgstr ""
+
+#: options.php:300
+#: page-builder/blocks/aq-slider-block.php:135
+#@ presslayer
+msgid "Animation"
+msgstr ""
+
+#: options.php:301
+#: page-builder/blocks/aq-slider-block.php:137
+#@ presslayer
+msgid "Select your animation of choice."
+msgstr ""
+
+#: options.php:307
+#: page-builder/blocks/aq-slider-block.php:141
+#@ presslayer
+msgid "Direction"
+msgstr ""
+
+#: options.php:308
+#@ presslayer
+msgid "Select the direction for your slides. Slide animation only & if using the vertical direction all slides must have the same height."
+msgstr ""
+
+#: options.php:314
+#: page-builder/blocks/aq-slider-block.php:147
+#@ presslayer
+msgid "SlideShow Speed"
+msgstr ""
+
+#: options.php:315
+#: page-builder/blocks/aq-slider-block.php:149
+#@ presslayer
+msgid "Enter your preferred slideshow speed in milliseconds."
+msgstr ""
+
+#: options.php:321
+#: page-builder/blocks/aq-slider-block.php:153
+#@ presslayer
+msgid "Animation Speed"
+msgstr ""
+
+#: options.php:322
+#: page-builder/blocks/aq-slider-block.php:155
+#@ presslayer
+msgid "Enter your preferred animation speed in milliseconds."
+msgstr ""
+
+#: options.php:329
+#@ presslayer
+msgid "Blog Settings"
+msgstr ""
+
+#: options.php:334
+#@ presslayer
+msgid "Post Meta"
+msgstr ""
+
+#: options.php:335
+#: options.php:601
+#@ presslayer
+msgid "Multicheck description."
+msgstr ""
+
+#: options.php:342
+#@ presslayer
+msgid "Auto Entry Excerpts"
+msgstr ""
+
+#: options.php:343
+#@ presslayer
+msgid "Check this box if you want the theme to automatically create excerpts for your blog."
+msgstr ""
+
+#: options.php:349
+#@ presslayer
+msgid "Excerpt Length"
+msgstr ""
+
+#: options.php:350
+#@ presslayer
+msgid "If you selected to auto trim excerpts, how many words do you wish to show?"
+msgstr ""
+
+#: options.php:357
+#@ presslayer
+msgid "Crop Entry thumbnails"
+msgstr ""
+
+#: options.php:358
+#@ presslayer
+msgid "Check this box to automatically crop your blog post thumbnails."
+msgstr ""
+
+#: options.php:364
+#@ presslayer
+msgid "Post Author"
+msgstr ""
+
+#: options.php:365
+#@ presslayer
+msgid "Check this box to enable Post Author."
+msgstr ""
+
+#: options.php:371
+#@ presslayer
+msgid "Post Share"
+msgstr ""
+
+#: options.php:372
+#@ presslayer
+msgid "Check this box to enable Post Share."
+msgstr ""
+
+#: options.php:378
+#@ presslayer
+msgid "Related Posts Box"
+msgstr ""
+
+#: options.php:379
+#@ presslayer
+msgid "Check this box to enable Related Posts Box."
+msgstr ""
+
+#: options.php:385
+#@ presslayer
+msgid "Next & Previous Posts"
+msgstr ""
+
+#: options.php:386
+#@ presslayer
+msgid "Check this box to enable Next & Previous post links."
+msgstr ""
+
+#: options.php:392
+#@ presslayer
+msgid "Like Button"
+msgstr ""
+
+#: options.php:393
+#@ presslayer
+msgid "Check this box to enable like button for posts."
+msgstr ""
+
+#: options.php:400
+#@ presslayer
+msgid "Font Settings"
+msgstr ""
+
+#: options.php:418
+#@ presslayer
+msgid "Custom Typography"
+msgstr ""
+
+#: options.php:419
+#@ presslayer
+msgid "Custom typography options."
+msgstr ""
+
+#: options.php:427
+#@ presslayer
+msgid "Custom Sidebars"
+msgstr ""
+
+#: options.php:441
+#@ presslayer
+msgid "Basic Settings"
+msgstr ""
+
+#: options.php:446
+#@ presslayer
+msgid "Input Text Mini"
+msgstr ""
+
+#: options.php:447
+#@ presslayer
+msgid "A mini text input field."
+msgstr ""
+
+#: options.php:454
+#@ presslayer
+msgid "Input Text"
+msgstr ""
+
+#: options.php:455
+#@ presslayer
+msgid "A text input field."
+msgstr ""
+
+#: options.php:461
+#@ presslayer
+msgid "Input with Placeholder"
+msgstr ""
+
+#: options.php:462
+#@ presslayer
+msgid "A text input field with an HTML5 placeholder."
+msgstr ""
+
+#: options.php:469
+#@ presslayer
+msgid "Textarea description."
+msgstr ""
+
+#: options.php:475
+#@ presslayer
+msgid "Input Select Small"
+msgstr ""
+
+#: options.php:476
+#@ presslayer
+msgid "Small Select Box."
+msgstr ""
+
+#: options.php:484
+#@ presslayer
+msgid "Input Select Wide"
+msgstr ""
+
+#: options.php:485
+#@ presslayer
+msgid "A wider select box."
+msgstr ""
+
+#: options.php:493
+#@ presslayer
+msgid "Select a Category"
+msgstr ""
+
+#: options.php:502
+#@ options_check
+msgid "Select a Tag"
+msgstr ""
+
+#: options.php:503
+#@ options_check
+msgid "Passed an array of tags with term_id and term_name"
+msgstr ""
+
+#: options.php:510
+#@ presslayer
+msgid "Select a Page"
+msgstr ""
+
+#: options.php:511
+#@ presslayer
+msgid "Passed an pages with ID and post_title"
+msgstr ""
+
+#: options.php:517
+#@ presslayer
+msgid "Input Radio (one)"
+msgstr ""
+
+#: options.php:518
+#: options.php:543
+#@ presslayer
+msgid "Radio select with default options \"one\"."
+msgstr ""
+
+#: options.php:525
+#@ presslayer
+msgid "Example Info"
+msgstr ""
+
+#: options.php:526
+#@ presslayer
+msgid "This is just some example information you can put in the panel."
+msgstr ""
+
+#: options.php:530
+#@ presslayer
+msgid "Input Checkbox"
+msgstr ""
+
+#: options.php:531
+#@ presslayer
+msgid "Example checkbox, defaults to true."
+msgstr ""
+
+#: options.php:537
+#@ presslayer
+msgid "Advanced Settings"
+msgstr ""
+
+#: options.php:542
+#@ presslayer
+msgid "Predefined Skins"
+msgstr ""
+
+#: options.php:550
+#@ presslayer
+msgid "Primary Color"
+msgstr ""
+
+#: options.php:551
+#: options.php:558
+#: options.php:609
+#@ presslayer
+msgid "No color selected by default."
+msgstr ""
+
+#: options.php:557
+#@ presslayer
+msgid "Background Color"
+msgstr ""
+
+#: options.php:573
+#@ presslayer
+msgid "Check to Show a Hidden Text Input"
+msgstr ""
+
+#: options.php:574
+#@ presslayer
+msgid "Click here and see what happens."
+msgstr ""
+
+#: options.php:579
+#@ presslayer
+msgid "Hidden Text Input"
+msgstr ""
+
+#: options.php:580
+#@ presslayer
+msgid "This option is hidden unless activated by a checkbox click."
+msgstr ""
+
+#: options.php:587
+#@ presslayer
+msgid "Uploader Test"
+msgstr ""
+
+#: options.php:588
+#@ presslayer
+msgid "This creates a full size uploader that previews the image."
+msgstr ""
+
+#: options.php:593
+#@ presslayer
+msgid "Example Background"
+msgstr ""
+
+#: options.php:594
+#@ presslayer
+msgid "Change the background CSS."
+msgstr ""
+
+#: options.php:600
+#@ presslayer
+msgid "Multicheck"
+msgstr ""
+
+#: options.php:608
+#@ presslayer
+msgid "Colorpicker"
+msgstr ""
+
+#: options.php:614
+#@ presslayer
+msgid "Typography"
+msgstr ""
+
+#: options.php:615
+#@ presslayer
+msgid "Example typography."
+msgstr ""
+
+#: options.php:621
+#@ presslayer
+msgid "Text Editor"
+msgstr ""
+
+#: options.php:640
+#@ presslayer
+msgid "Default Text Editor"
+msgstr ""
+
+#: options.php:641
+#, php-format
+#@ presslayer
+msgid "You can also pass settings to the editor.  Read more about wp_editor in <a href=\"%1$s\" target=\"_blank\">the WordPress codex</a>"
+msgstr ""
+
+#: options.php:647
+#@ presslayer
+msgid "Example Icon"
+msgstr ""
+
+#: options.php:648
+#@ presslayer
+msgid "Example Icon description"
+msgstr ""
+
+#: options.php:654
+#@ presslayer
+msgid " Ads Management"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:5
+#: page-builder/blocks/aq-cats-masonry-block.php:5
+#@ aqpb-l10n
+msgid "Cats - Masonry"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:33
+#: page-builder/blocks/aq-blog-block.php:33
+#: page-builder/blocks/aq-cats-masonry-block.php:26
+#: page-builder/blocks/aq-slider-block.php:40
+#@ presslayer
+msgid "Title (optional)"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:38
+#: page-builder/blocks/aq-cats-masonry-block.php:31
+#@ presslayer
+msgid "Show Custom Title"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:39
+#: page-builder/blocks/aq-cats-masonry-block.php:32
+#@ presslayer
+msgid "Show custom title for blog."
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:45
+#: page-builder/blocks/aq-blog-block.php:51
+#@ presslayer
+msgid "Select your type for blog."
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:49
+#: page-builder/blocks/aq-blog-block.php:43
+#: page-builder/blocks/aq-slider-block.php:51
+#@ presslayer
+msgid "Show in Categories"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:51
+#: page-builder/blocks/aq-blog-block.php:45
+#: page-builder/blocks/aq-slider-block.php:53
+#@ presslayer
+msgid "Leave blank to show in all categories."
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:62
+#: page-builder/blocks/aq-blog-block.php:62
+#: page-builder/blocks/aq-slider-block.php:64
+#@ presslayer
+msgid "Post Formats"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:64
+#: page-builder/blocks/aq-blog-block.php:64
+#: page-builder/blocks/aq-slider-block.php:66
+#@ presslayer
+msgid "Leave blank to show in all formats."
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:68
+#: page-builder/blocks/aq-blog-block.php:68
+#: page-builder/blocks/aq-slider-block.php:70
+#@ presslayer
+msgid "Post Formats Operator"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:70
+#: page-builder/blocks/aq-blog-block.php:70
+#: page-builder/blocks/aq-slider-block.php:72
+#@ presslayer
+msgid "Select the post formats operator."
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:74
+#: page-builder/blocks/aq-blog-block.php:74
+#: page-builder/blocks/aq-slider-block.php:76
+#@ presslayer
+msgid "Include posts"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:76
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:81
+#: page-builder/blocks/aq-blog-block.php:76
+#: page-builder/blocks/aq-blog-block.php:81
+#: page-builder/blocks/aq-slider-block.php:78
+#: page-builder/blocks/aq-slider-block.php:83
+#@ presslayer
+msgid "Enter post IDs, separated by commas."
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:79
+#: page-builder/blocks/aq-blog-block.php:79
+#: page-builder/blocks/aq-slider-block.php:81
+#@ presslayer
+msgid "Exclude posts"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:85
+#: page-builder/blocks/aq-blog-block.php:85
+#: page-builder/blocks/aq-slider-block.php:87
+#@ presslayer
+msgid "Order by"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:90
+#: page-builder/blocks/aq-blog-block.php:90
+#: page-builder/blocks/aq-slider-block.php:92
+#@ presslayer
+msgid "Order"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:118
+#: page-builder/blocks/aq-blog-block.php:113
+#: page-builder/blocks/aq-cats-masonry-block.php:52
+#: page-builder/blocks/aq-slider-block.php:130
+#@ presslayer
+msgid "Posts count"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:272
+#@ presslayer
+msgid "Loading"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:273
+#@ presslayer
+msgid "No more posts to load"
+msgstr ""
+
+#: page-builder/blocks/Copy of aq-cats-masonry-block.php:330
+#@ presslayer
+msgid "Load more"
+msgstr ""
+
+#: page-builder/blocks/aq-alert-block.php:10
+#@ aqpb-l10n
+msgid "Alerts"
+msgstr ""
+
+#: page-builder/blocks/aq-blog-block.php:5
+#@ aqpb-l10n
+msgid "Blog"
+msgstr ""
+
+#: page-builder/blocks/aq-blog-block.php:38
+#@ presslayer
+msgid "Blog Title"
+msgstr ""
+
+#: page-builder/blocks/aq-blog-block.php:115
+#, php-format
+#@ presslayer
+msgid "Leave blank to use <a href=\"%s\" target=\"_blank\">\"Blog pages show at most\"</a>. Set \"-1\" to show all posts."
+msgstr ""
+
+#: page-builder/blocks/aq-blog-block.php:119
+#@ presslayer
+msgid "Length of excerpt"
+msgstr ""
+
+#: page-builder/blocks/aq-blog-block.php:121
+#@ presslayer
+msgid "Choose number of words for Post Excerpt."
+msgstr ""
+
+#: page-builder/blocks/aq-blog-block.php:278
+#@ presslayer
+msgid "No more posts to load."
+msgstr ""
+
+#: page-builder/blocks/aq-blog-block.php:338
+#@ presslayer
+msgid "Load More"
+msgstr ""
+
+#: page-builder/blocks/aq-cats-masonry-block.php:36
+#@ presslayer
+msgid "Categories"
+msgstr ""
+
+#: page-builder/blocks/aq-cats-masonry-block.php:38
+#@ presslayer
+msgid "Leave blank to show all categories."
+msgstr ""
+
+#: page-builder/blocks/aq-cats-masonry-block.php:42
+#@ presslayer
+msgid "Column width"
+msgstr ""
+
+#: page-builder/blocks/aq-cats-masonry-block.php:54
+#@ presslayer
+msgid "Set number of posts for each category."
+msgstr ""
+
+#: page-builder/blocks/aq-clear-block.php:12
+#@ aqpb-l10n
+msgid "Clear"
+msgstr ""
+
+#: page-builder/blocks/aq-clear-block.php:43
+#@ aqpb-l10n
+msgid "Use this block to clear the floats between two or more separate blocks vertically."
+msgstr ""
+
+#: page-builder/blocks/aq-column-block.php:9
+#@ aqpb-l10n
+msgid "Column"
+msgstr ""
+
+#: page-builder/blocks/aq-column-block.php:43
+#: page-builder/blocks/aq-column-block.php:64
+#@ aqpb-l10n
+msgid "Drag block items into this column box"
+msgstr ""
+
+#: page-builder/blocks/aq-contact-block.php:8
+#@ aqpb-l10n
+msgid "Contact"
+msgstr ""
+
+#: page-builder/blocks/aq-editor-block.php:8
+#@ aqpb-l10n
+msgid "Visual Editor"
+msgstr ""
+
+#: page-builder/blocks/aq-slider-block.php:45
+#@ presslayer
+msgid "Show Box"
+msgstr ""
+
+#: page-builder/blocks/aq-slider-block.php:46
+#@ presslayer
+msgid "Wrap slider by a white box."
+msgstr ""
+
+#: page-builder/blocks/aq-slider-block.php:125
+#@ presslayer
+msgid "Show Video"
+msgstr ""
+
+#: page-builder/blocks/aq-slider-block.php:126
+#@ presslayer
+msgid "Show video if the post has video."
+msgstr ""
+
+#: page-builder/blocks/aq-slider-block.php:143
+#@ presslayer
+msgid "Select the direction for your slides."
+msgstr ""
+
+#: page-builder/blocks/aq-tabs-block.php:8
+#@ aqpb-l10n
+msgid "Tabs &amp; Toggles"
+msgstr ""
+
+#: page-builder/blocks/aq-upload-block.php:11
+#@ aqpb-l10n
+msgid "Media"
+msgstr ""
+
+#: page-builder/blocks/aq-widgets-block.php:7
+#@ aqpb-l10n
+msgid "Widgets"
+msgstr ""
+
+#: page-builder/classes/class-aq-block.php:36
+#@ aqpb-l10n
+msgid "function AQ_Block::block should not be accessed directly. Output generated by the "
+msgstr ""
+
+#: page-builder/classes/class-aq-block.php:57
+#@ aqpb-l10n
+msgid "There are no options for this block."
+msgstr ""
+
+#: page-builder/classes/class-aq-block.php:136
+#@ aqpb-l10n
+msgid "Edit Block"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:25
+#: page-builder/classes/class-aq-page-builder.php:26
+#: page-builder/functions/aqpb_config.php:14
+#: page-builder/functions/aqpb_config.php:15
+#@ aqpb-l10n
+msgid "Page Builder"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:27
+#: page-builder/functions/aqpb_config.php:16
+#@ aqpb-l10n
+msgid "aqua-page-builder"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:291
+#@ aqpb-l10n
+msgid "Drag block items from the left into this area to begin building your template."
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:433
+#@ aqpb-l10n
+msgid "Error : Template id is not valid"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:577
+#@ aqpb-l10n
+msgid "This template is empty"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:681
+#: page-builder/classes/class-aq-page-builder.php:682
+#: page-builder/classes/class-aq-page-builder.php:685
+#@ aqpb-l10n
+msgid "Add Page Template"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:685
+#@ aqpb-l10n
+msgid "Add Template"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:722
+#@ aqpb-l10n
+msgid "Please select your template first!"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:739
+#, php-format
+#@ aqpb-l10n
+msgid "You don't have any template yet. Let's %s create %s one!"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:742
+#@ aqpb-l10n
+msgid "Choose Your Page Template"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:750
+#@ aqpb-l10n
+msgid "Insert Template"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:751
+#@ aqpb-l10n
+msgid "Cancel"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:778
+#@ default
+msgid "For more information:"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:779
+#@ default
+msgid "<a href=\"http://aquagraphite.com/api/documentation/aqua-page-builder\" target=\"_blank\">Documentation</a>"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:780
+#@ default
+msgid "<a href=\"https://wordpress.org/plugins/aqua-page-builder/changelog/\" target=\"_blank\">Changelog</a>"
+msgstr ""
+
+#: page-builder/classes/class-aq-page-builder.php:786
+#@ default
+msgid "Overview"
+msgstr ""
+
+#: page-builder/functions/aqpb_blocks.php:222
+#@ aqpb-l10n
+msgid "Drag block items into this box"
+msgstr ""
+
+#: page-builder/functions/aqpb_config.php:21
+#@ aqpb-l10n
+msgid "The page builder allows you to create custom page templates which you can later use for your pages."
+msgstr ""
+
+#: page-builder/functions/aqpb_config.php:22
+#@ aqpb-l10n
+msgid "To use the page builder, start by adding a new template. You can drag and drop the blocks on the left into the building area on the right of the screen. Each block has its own unique configuration which you can manually configure to suit your needs"
+msgstr ""
+
+#: page-builder/functions/aqpb_config.php:23
+#@ aqpb-l10n
+msgid "Please refer to the"
+msgstr ""
+
+#: page-builder/functions/aqpb_config.php:23
+#@ aqpb-l10n
+msgid " documentation page "
+msgstr ""
+
+#: page-builder/functions/aqpb_config.php:23
+#@ aqpb-l10n
+msgid "for more information on how to use this feature."
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:19
+#@ default
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:67
+#: page-builder/view/view-builder-page.php:91
+#: page-builder/view/view-builder-page.php:114
+#@ aqpb-l10n
+msgid "The "
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:67
+#@ aqpb-l10n
+msgid " page template has been successfully created"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:75
+#: page-builder/view/view-builder-page.php:99
+#@ aqpb-l10n
+msgid "Sorry, the operation was unsuccessful for the following reason(s): "
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:91
+#@ aqpb-l10n
+msgid " template has been successfully cloned"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:114
+#@ aqpb-l10n
+msgid " page template has been updated"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:126
+#@ aqpb-l10n
+msgid "The template has been successfully deleted"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:155
+#@ aqpb-l10n
+msgid "Select a template to edit:"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:160
+#@ aqpb-l10n
+msgid "-- Select --"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:179
+#@ aqpb-l10n
+msgid "or"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:192
+#@ aqpb-l10n
+msgid "Create a new template"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:199
+#@ aqpb-l10n
+msgid "Create your new template below"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:209
+#@ aqpb-l10n
+msgid "Available Blocks"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:209
+#@ aqpb-l10n
+msgid "Deleting"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:232
+#@ aqpb-l10n
+msgid "Template Name"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:233
+#@ aqpb-l10n
+msgid "Enter template name here"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:241
+#@ aqpb-l10n
+msgid "Create Template"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:241
+#: page-builder/view/view-builder-page.php:320
+#@ aqpb-l10n
+#@ default
+msgid "Save Template"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:266
+#@ aqpb-l10n
+msgid ""
+"To create a custom page template, give it a name above and click Create Template. Then choose blocks like text, widgets or tabs &amp; toggles from the left column to add to this template.\n"
+"\t\t\t\t\t\t\t\t\t<br/><br/>\n"
+"\t\t\t\t\t\t\t\t\tYou can drag and drop the blocks to put them in the order you want. Click on the small arrow at the corner of each block to reveal additional configuration options. You can also resize each block by clicking on either side of the block (Note that some blocks are not resizable)\n"
+"\t\t\t\t\t\t\t\t\t<br/><br/>\n"
+"\t\t\t\t\t\t\t\t\tWhen you have finished building your custom page template, make sure you click the Save Template button."
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:297
+#@ aqpb-l10n
+msgid "Delete Template"
+msgstr ""
+
+#: page-builder/view/view-builder-page.php:312
+#@ aqpb-l10n
+msgid "Clone Template"
+msgstr ""
+
+#: related-post.php:17
+#@ presslayer
+msgid "Related Posts"
+msgstr ""
+
+#: single.php:23
+#@ presslayer
+msgid "Previous post"
+msgstr ""
+
+#: single.php:24
+#@ presslayer
+msgid "Next post"
+msgstr ""
+
+#: templates/template-trans.php:24
+#@ presslayer
+msgid "Pages"
+msgstr ""
+
+#: templates/template-trans.php:26
+#@ presslayer
+msgid "Tags"
+msgstr ""
+
