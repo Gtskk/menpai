@@ -86,4 +86,19 @@ get_header(); ?>
 </div>
 
 <?php
+	global $wpdb;
+	$code = '9789798adsf';
+	$user_count = $wpdb->get_var( $wpdb->prepare( 
+		"
+			SELECT COUNT(id) 
+			FROM mp_invite_codes 
+			WHERE code = %s
+		", 
+		$code
+		)
+	);
+	var_dump($user_count);
+?>
+
+<?php
 get_footer();
