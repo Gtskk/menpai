@@ -168,3 +168,33 @@ add_filter('get_avatar', 'my_avatar');
 
 
 include 'demo.php';
+
+// 验证邀请码ajax请求函数
+function invite_code()
+{
+	global $wpdb;
+	$code = isset($_POST['invite']) ? $_POST['invite'] : '';
+	if(!$code)
+	{
+		die('error');
+	}
+	$user_count = $wpdb->get_var( $wpdb->prepare( 
+		"
+			SELECT COUNT(id) 
+			FROM mp_invite_codes 
+			WHERE code = %s
+		", 
+		$code
+		)
+	);
+	if($user_count > 0)
+	{
+		die('ok');
+	}
+	else
+	{
+		die('error');
+	}
+}
+add_action('wp_ajax_invite_code', 'invite_code');
+add_action('wp_ajax_nopriv_invite_code', 'invite_code');

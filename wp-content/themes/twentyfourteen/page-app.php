@@ -6,19 +6,50 @@ get_header();
 ?>
 
 <div class="slide">
+  <a href="javascript:void(0)" data-dialog="somedialog" class="trigger">
+    <img style="margin-top:187px;margin-left:549px;" src="<?php echo get_template_directory_uri();?>/images/app_d.png" />
+  </a>
+</div>
 
+<div id="somedialog" class="dialog">
+  <div class="dialog__overlay"></div>
+  <div class="dialog__content">
+    <img class="action" style="position:absolute;top:5px;right:5px;cursor:pointer;" src="<?php echo get_template_directory_uri();?>/images/close_bt.png" alt="close" data-dialog-close>
+
+    <div style="float:left;width:700px;text-align:left;" class="gtskkll">
+      <p style="font-size:12pt;color:rgb(0,200,200);">
+        <span style="font-size:9pt;color:rgb(120,120,120);line-height:35px;">感谢您对门派的支持</span>
+        <br />
+        门派APP正在内测中，请输入邀请码
+      </p>
+      <style type="text/css">
+        .gtskkll a{background-color:rgb(150,150,150);vertical-align: middle;}
+        .gtskkll a:hover{background-color: rgb(120,120,120);}
+        .gtskkll a:active{background-color: rgb(0,200,200);}
+        .down_hide,.error_code{display: none;}
+      </style>
+      <input style="width:474px;height:34px;margin-top:35px;background-color:rgb(245,245,245);border:rgb(220,220,220);" type="text" name="invite_code" />
+      <a href="javascript:void(0);" style="padding:9px 20px;color:#fff;border: rgb(220,220,220) 1px solid;">确&nbsp;&nbsp;认</a>
+      <p style="font-size:9pt;color:rgb(120,120,120);line-height:35px;" class="error_code">
+        您输入的邀请码有误
+      </p>
+    </div>
+    <div class="down_hide">
+      <img src="<?php echo get_template_directory_uri();?>/images/d_erweima.png" alt="下载二维码" />
+    </div>
+  </div>
 </div>
 
 <div id="content" >
-  <h1 class="f40 cyan">免费下载，创建属于你们的门派  </h1>
-  
-  
+  <h1 class="f40 cyan" style="margin-top:130px;font-size:33px;">免费下载，创建属于你们的门派  </h1>
   
   <div class="section area1">
   
   <div class="wrap">
-          <h1 class="f36">新一代移动社区</h1>
-          <h2 class="f22">从线上到线下  聚会永远不散场</h2>
+          <h1 class="f36" style="font-size:30px;margin-top:100px;">
+            社区功能<br />
+            <span style="font-size:22px;line-height:50px;">支持图片、文字、语音、位置分享</span>
+          </h1>
           
           <div class="icon">
            <table width="460" border="0" cellspacing="0" cellpadding="0">
@@ -50,8 +81,8 @@ get_header();
   
   <div class="section area2 clear">
      <div class="wrap">
-     <h1 class="f36">创新行动管理工具</h1>
-     <h2 class="f22">手机玩转社群  集体行动也有法宝</h2>
+     <h1 class="f36" style="font-size:30px;">行动管理功能</h1>
+     <h2 class="f22">轻松管理聚会、抽奖、筹款、雷法呼叫</h2>
      
      
      <dl>
@@ -96,12 +127,9 @@ get_header();
   
   <div class="section area3">
   <div class="wrap">
-      <h1 class="f36">门派基金会</h1>
-      <h2 class="f22">有福同享  普大喜奔 </h2>
-          <div class="text f16">
-         <p> 每个门派均设有专属基金会，既可以作为社群的活动资金也可以为本门群众</p>
-          <p> 设置抽奖，大声宣布你们的心愿，社群经纪人为你们量身找寻靠谱赞助商。</p>
-          </div>
+      <h1 class="f36" style="font-size:30px;">门派基金会</h1>
+      <h2 class="f22">利于社群成员签收各类线上、线下福利，<br/>为集体筹集经费、获得收入</h2>
+          
   </div>
   </div>
   
@@ -116,7 +144,7 @@ get_header();
           <dl>
           <dt class="f22 purple">福利</dt>
           <dd>免费加油、免费吃喝、免费玩乐，</dd>
-          <dd>满足一切社群所需！</dd>
+          <dd style="margin-top:15px;">满足一切社群所需！</dd>
           </dl>
           
           
@@ -129,7 +157,12 @@ get_header();
           <dl>
           <dt class="f22 blue">特供商品</dt>
           <dd>订制商品，惊喜特价、奇味特产、新品尝鲜，</dd>
-          <dd>一切尽在赞助商精选特供！</dd>
+          <dd style="margin-top:15px;">一切尽在赞助商精选特供！</dd>
+          </dl>
+
+          <dl>
+          <dd style="font-size:12px;color:#bbb;">* 建议社群管理者(GM)将“门派”与QQ群、微信组合使用。</dd>
+          <dd style="font-size:12px;color:#bbb;">获得门派“+V”认证，开通社群官方网站，立即后的品牌赞助商的支持</dd>
           </dl>
       </div>
   </div>
@@ -168,5 +201,42 @@ get_header();
       </div>
   </div> -->
 </div>
+
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/dialogFx.js"></script>
+<script>
+  (function() {
+
+    var dlgtrigger = document.querySelector( '[data-dialog]' ),
+      somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+      dlg = new DialogFx( somedialog );
+
+    dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+
+  })();
+  <?php 
+    $admin_url=admin_url( 'admin-ajax.php' );?>
+  $(document).ready(function(){
+    $('.gtskkll a').click(function(){
+      var data = {
+        action: 'invite_code',
+        invite: $('input[name="invite_code"]').val()
+      };
+      $.post('<?php echo $admin_url;?>', data, function(resp){
+        if(resp == 'ok')
+        {
+          $('.down_hide').show();
+          $('.error_code').hide();
+        }
+        else if(resp == 'error')
+        {
+          $('.down_hide').hide();
+          $('.error_code').show();
+        }
+      });
+    });
+  });
+</script>
 
 <?php get_footer();

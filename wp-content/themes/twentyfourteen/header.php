@@ -29,6 +29,9 @@
 			});
 		});
 	</script>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/dialog.css"></link>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/dialog-sandra.css"></link>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.js"></script>
 	<?php //wp_head(); ?>
 	</head>
 

@@ -42,7 +42,7 @@ get_header(); ?>
 </div>
 <div style="background-color:#f0f0f0;">
 	<div id="content" class="index">
-	    <h1 class="f36">
+	    <h1 class="f36" style="padding-top:80px;font-size:29px;">
 	     	在南京，至少存在6500个社群，325000名成员
 	    </h1>
 	    <div class="banner">
@@ -82,26 +82,76 @@ get_header(); ?>
 	    <h1 class="f36">免费下载门派APP<br />
 	创建属于你们的门派</h1>
 	    <h2 class="f16">新一代移动社区+穿心行动管理功能+海量福利赞助</h2>
-	    <a href="" class="down_btn">
+	    <a href="javascript:void(0)" data-dialog="somedialog" class="trigger down_btn">
 	       <img src="<?php echo get_template_directory_uri(); ?>/images/ii_26.jpg" alt="">
 	    </a>
     </div>
 </div>
 
-<?php
-	global $wpdb;
-	$code = '9789798adsf';
-	$user_count = $wpdb->get_var( $wpdb->prepare( 
-		"
-			SELECT COUNT(id) 
-			FROM mp_invite_codes 
-			WHERE code = %s
-		", 
-		$code
-		)
-	);
-	var_dump($user_count);
-?>
+<div id="somedialog" class="dialog">
+  <div class="dialog__overlay"></div>
+  <div class="dialog__content">
+    <img class="action" style="position:absolute;top:5px;right:5px;cursor:pointer;" src="<?php echo get_template_directory_uri();?>/images/close_bt.png" alt="close" data-dialog-close>
+
+    <div style="float:left;width:700px;text-align:left;" class="gtskkll">
+      <p style="font-size:12pt;color:rgb(0,200,200);">
+        <span style="font-size:9pt;color:rgb(120,120,120);line-height:35px;">感谢您对门派的支持</span>
+        <br />
+        门派APP正在内测中，请输入邀请码
+      </p>
+      <style type="text/css">
+        .gtskkll a{background-color:rgb(150,150,150);vertical-align: middle;}
+        .gtskkll a:hover{background-color: rgb(120,120,120);}
+        .gtskkll a:active{background-color: rgb(0,200,200);}
+        .down_hide,.error_code{display: none;}
+      </style>
+      <input style="width:474px;height:34px;margin-top:35px;background-color:rgb(245,245,245);border:rgb(220,220,220);" type="text" name="invite_code" />
+      <a href="javascript:void(0);" style="padding:9px 20px;color:#fff;border: rgb(220,220,220) 1px solid;">确&nbsp;&nbsp;认</a>
+      <p style="font-size:9pt;color:rgb(120,120,120);line-height:35px;" class="error_code">
+        您输入的邀请码有误
+      </p>
+    </div>
+    <div class="down_hide">
+      <img src="<?php echo get_template_directory_uri();?>/images/d_erweima.png" alt="下载二维码" />
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/dialogFx.js"></script>
+<script>
+  (function() {
+
+    var dlgtrigger = document.querySelector( '[data-dialog]' ),
+      somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+      dlg = new DialogFx( somedialog );
+
+    dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+
+  })();
+  <?php 
+  	$admin_url=admin_url( 'admin-ajax.php' );?>
+  $(document).ready(function(){
+  	$('.gtskkll a').click(function(){
+  		var data = {
+  			action: 'invite_code',
+  			invite: $('input[name="invite_code"]').val()
+  		};
+  		$.post('<?php echo $admin_url;?>', data, function(resp){
+  			if(resp == 'ok')
+  			{
+  				$('.down_hide').show();
+  				$('.error_code').hide();
+  			}
+  			else if(resp == 'error')
+  			{
+  				$('.down_hide').hide();
+  				$('.error_code').show();
+  			}
+  		});
+  	});
+  });
+</script>
 
 <?php
 get_footer();

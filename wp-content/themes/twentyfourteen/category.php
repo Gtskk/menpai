@@ -13,7 +13,7 @@ get_header(); ?>
 
 <?php if(single_cat_title('', false) == '精选社群'):?>
 <div id="content" class="org">
-    <h1 class="f36" style="margin-top:65px;font-size:30px;line-height:58px;">
+    <h1 class="f36" style="margin-top:40px;font-size:25px;line-height:58px;">
         在南京，超过6500个真实社群不仅聚合在互联网上<br />更活跃在城市的每一处
     </h1>
     
@@ -149,8 +149,8 @@ get_header(); ?>
 </div>
 <?php else:?>
 <div id="content" class="activity">
-    <h1 class="f36" style="margin-top:60px;margin-bottom:10px;font-size:33px;">门派，一起玩出新花样</h1>
-    <h2 class="f28" style="font-size:24px;margin-bottom:30px;">YOUY WORLD, YOUR GUYS</h2>
+    <h1 class="f36" style="margin-top:60px;margin-bottom:10px;font-size:28px;">门派，一起玩出新花样</h1>
+    <h2 class="f28" style="font-size:21px;margin-bottom:30px;">YOUY WORLD, YOUR GUYS</h2>
    
     <?php
         $sticky = get_option('sticky_posts');
@@ -185,7 +185,7 @@ get_header(); ?>
         <?php while ( have_posts() ) : the_post();?>
             <li class="post" style="-webkit-box-shadow:0px 2px 5px #ccc;-moz-box-shadow:0px 2px 5px #ccc;box-shadow:0px 2px 5px #ccc;">
                 <div class="pic">
-                    <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(358, 279));?></a>
+                    <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(360, 279));?></a>
                 </div>
                  
                 <div class="text">
