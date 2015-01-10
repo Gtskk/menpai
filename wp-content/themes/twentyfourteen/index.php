@@ -16,7 +16,14 @@
 
 get_header(); ?>
 
-<div style="background:url(<?php echo get_template_directory_uri(); ?>/images/ii_02.jpg) no-repeat center;height:704px;"></div>
+<div style="margin-top:60px;">
+	<p style="text-align:center">
+		<img src="<?php echo get_template_directory_uri();?>/images/index_top1.png" alt="top1">
+		<br />
+		<img src="<?php echo get_template_directory_uri();?>/images/index_top2.png" alt="top2">
+	</p>
+	
+</div>
 <div id="content" class="index">
      
     <h1 class="f36" style="margin-top:140px;margin-bottom:10px;">门派，一起玩出新花样</h1>

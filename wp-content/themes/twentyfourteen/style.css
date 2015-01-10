@@ -270,7 +270,7 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 
 
 
-#footer{background: #fff;font-size:18px; color:#666; padding:20px 0px 30px 0px;border-top: #eee 1px solid;}
+#footer{background: #fff;font-size:10pt; color:rgb(100,100,100); padding:20px 0px 30px 0px;border-top: #eee 1px solid;}
 #footer a{color:#666;}
 #footer img{ vertical-align:middle;}
 .f_logo{margin-right: 30px;}
