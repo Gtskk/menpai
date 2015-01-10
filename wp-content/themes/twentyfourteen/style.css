@@ -74,42 +74,45 @@ body{background: #fff;}
 
 
 #content{ width:1100px; margin:0 auto;}
-#content h1{ color:#646464;text-align: center; margin:40px 0px 40px 0px;}
+#content h1{ color:#646464;text-align: center; margin:170px 0px 40px 0px;}
 #content h2{ color:#c8c8c8;text-align: center; margin:0px 0px 40px 0px;}
 
 /*活动*/
-.banner{margin-bottom: 60px;}
+.banner{margin-bottom: 20px;}
 .flexslider {
   margin-bottom: 60px;
 }
 #content .flexslider a h2{
   display: block;
   position: absolute;
-  bottom: 0px;
-  width: 1092px;
+  bottom: -40px;
+  width: 1060px;
   font-size: 30px;
   text-align: left;
-  margin: 10px 0 20px 40px;
+  padding: 10px 0 20px 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 .col3.spec ul{float: left;display: inline; width:356px;margin-right: 13px;
 }
 ul#post_container{margin-left: -10px;}
-.col3 ul li{/* border-bottom: #e0dfdf 1px solid; */margin-bottom: 15px;background: #fff;
--webkit-box-shadow:0px 2px 5px #999;
+.col3 ul li{margin-bottom: 15px;background: #fff;
+/* -webkit-box-shadow:0px 2px 5px #999;
 -moz-box-shadow:0px 2px 5px #999 ;
-box-shadow:0px 2px 5px #999 ;
+box-shadow:0px 2px 5px #999 ; */
 overflow:hidden;
 width: 357px;
 }
 ul#post_container li{width: 360px;margin-left: 10px;}
-.col3 .text{line-height: 2em;font-size: 14px; padding:20px; color:#969696;}
+.col3 .text{line-height: 2em;font-size: 14px; padding:10px 25px; color:#969696;}
 .col3 h3{font-size: 22px;font-weight: normal; color:#666; margin:10px 0px;}
 .col3 .date{ text-align:right;font-size: 12px;}
 .col3 .date a{ padding:1px 6px; background: #00c8c8; color:#fff;margin-right: 10px;}
 .col3 .date a.g{background: #ff8200;}
-.col3 .qun{padding:10px 20px;color:#969696;border-top: 1px solid #e6e6e6;}
+.col3 .qun{padding:10px 20px;color:#969696;border-top: 1px solid #e6e6e6;background-color: rgb(245, 245, 245);}
 .col3 .qun p{padding:5px 0px;}
 .col3 .qun span{display: block;}
+.spec ul li{border: #e0dfdf 1px solid;}
 
 
 
@@ -125,7 +128,7 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 .index .col3 h3{}
 .index .col3 h3 em{font-size: 14px;display: block;}
 .index .col3 p{ text-align:left; color:#999; padding:20px 50px;font-size: 14px;line-height: 1.8em;}
-.download{text-align: center;margin-top: 100px;background:#fff; height:759px;text-align: left;}
+.download{text-align: center;margin-top: 80px;background:#fff; height:759px;text-align: left;}
 .download .wrap{background:#fff url(images/ii_23.jpg) no-repeat center right;height:759px;}
 .download h1{ color:#646464; padding:200px 0px 0px 50px;line-height:1.2em;}
 .download h2{ color:#969696; margin:20px 0px 0px 50px;}
@@ -138,7 +141,7 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 
    .org{}
 .org .banner{margin-bottom: 60px;}
-	.org .qlist li{ margin:40px 0px;}
+	.org .qlist li{ padding:38px 0px;border-bottom: #eee 1px solid;height: 76px;}
 	.org .qlist dl{float: left;display: inline;}
 	.org .qlist dt{float: left;}
 	.org .qlist dd{font-size: 15px; color:#999; padding:3px 0px 0px 10px;margin-left:75px;}
@@ -146,7 +149,8 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 	.org .qlist li p{float: right;display: inline; width:550px;font-size: 14px; color:#999;margin-top: 10px;}
 	.pages{text-align: center;color:#999; margin:40px 0px;}
 	.pages a, .pages span{ padding:5px 10px; border:#ccc 1px solid; color:#999;margin: 0px 2px;}
-  .qlist .clear dl dt a img{border-radius: 66px;-webkit-border-radius:66px;}
+  .qlist .clear dl dt img.round{border-radius: 65px;-webkit-border-radius:65px;}
+  .org .qlist .no-border-bot{border-bottom: none;}
 	
 
 /*点开*/
@@ -206,7 +210,7 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 
 /*APP*/
 
-      .app{background: #f0f0f0;}
+.app{background: #fff;}
 .app #content{ width:auto;}
 .area2,.area3,.area4{background:#f0f0f0;}
 .app .banner{background:#f0f0f0; margin:0; padding-bottom: 100px;}
@@ -266,7 +270,7 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 
 
 
-#footer{background: #fff;font-size:18px; color:#666; padding:20px 0px 30px 0px;}
+#footer{background: #fff;font-size:18px; color:#666; padding:20px 0px 30px 0px;border-top: #eee 1px solid;}
 #footer a{color:#666;}
 #footer img{ vertical-align:middle;}
 .f_logo{margin-right: 30px;}

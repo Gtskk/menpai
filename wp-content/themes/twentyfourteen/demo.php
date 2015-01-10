@@ -43,6 +43,11 @@ function your_prefix_register_meta_boxes( $meta_boxes )
 				'id'               => "{$prefix}groupname",
 				'type'             => 'text',
 			),
+			array(
+				'name'             => '群组官网',
+				'id'               => "{$prefix}groupwebsite",
+				'type'             => 'text',
+			),
 			// IMAGE ADVANCED (WP 3.5+)
 			array(
 				'name'             => '群组logo',

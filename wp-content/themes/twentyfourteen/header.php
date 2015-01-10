@@ -32,7 +32,7 @@
 	<?php //wp_head(); ?>
 	</head>
 
-	<body<?php if(is_page(2)):?> class="app"<?php elseif(is_category(10) or is_single()):?> style="background:#f0f0f0;"<?php endif;?>>
+	<body<?php if(is_page(2)):?> class="app"<?php elseif(is_category(10) or is_single()):?> style="background-color:#f0f0f0;"<?php endif;?>>
 		<div id="header">
 		   	<div class="wrap clear">
 			   	<div class="logo">

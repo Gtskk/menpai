@@ -13,8 +13,9 @@ get_header(); ?>
 
 <?php if(single_cat_title('', false) == '精选社群'):?>
 <div id="content" class="org">
-    <h1 class="f36">超过6500个南京本地社群在门派聚合</h1>
-    <h2 class="f28">YOUY WORLD, YOUR GUYS</h2>
+    <h1 class="f36" style="margin-top:65px;font-size:30px;line-height:58px;">
+        在南京，超过6500个真实社群不仅聚合在互联网上<br />更活跃在城市的每一处
+    </h1>
     
     <?php
         $sticky = get_option('sticky_posts');
@@ -29,13 +30,17 @@ get_header(); ?>
         <ul class="slides">
         <?php while($query->have_posts()):$query->the_post();?>
             <li>
-                <a href="<?php the_permalink();?>">
+                <?php $web = rwmb_meta('gtskk_groupwebsite', 'type=text', get_the_id());if($web):?>
+                <a href="<?php echo $web;?>">
+                <?php endif;?>
                     <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'full');
                         $image = $thumb ? $thumb[0] : '<?php echo get_template_directory_uri(); ?>/images/i_06.jpg';
                     ?>
                     <img src="<?php echo $image;?>" alt="j">
                     <h2><?php echo get_the_date('m月d日');?> <?php echo mb_substr(get_the_title(), 0, 40);?></h2>
+                <?php if($web):?>
                 </a>
+                <?php endif;?>
             </li>
         <?php endwhile;?>
         </ul>
@@ -63,15 +68,15 @@ get_header(); ?>
 
             $q = 'select * from web_data limit '.($page - 1)*$per_page.','.$per_page;
             $r = $conn->query($q);
+            $ttn = mysqli_num_rows($r);
+            $count = 0;
         ?>
         <ul>
-            <?php while($row =mysqli_fetch_assoc($r)):?>
-            <li class="clear">
+            <?php while($row =mysqli_fetch_assoc($r)):$count++;?>
+            <li class="clear<?php if($count == $ttn):?> no-border-bot<?php endif;?>">
                 <dl>
                     <dt>
-                        <a href="">
-                            <img src="http://www.mempie.com/<?php echo $row['group_logo'];?>" alt="<?php echo $row['group_name'];?>" width="66" height="66">
-                        </a>
+                        <img class="round" src="http://www.mempie.com/<?php echo $row['group_logo'];?>" alt="<?php echo $row['group_name'];?>" width="66" height="66">
                     </dt>
                     <dd>
                         <?php if($row['group_user_name']):?>
@@ -79,6 +84,13 @@ get_header(); ?>
                         <?php endif;?>
                         <?php echo $row['group_cat'];?></dd>
                     <dd><strong><?php echo $row['group_name'];?></strong><?php echo $row['group_members'];?>人</dd>
+                </dl>
+                <dl style="margin-left:30px;margin-top:20px;">
+                    <dt>
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri();?>/images/viewWeb.png" alt="查看官网" title="查看官网">
+                        </a>
+                    </dt>
                 </dl>
                 <p>
                 <?php echo $row['group_content'];?>
@@ -137,8 +149,8 @@ get_header(); ?>
 </div>
 <?php else:?>
 <div id="content" class="activity">
-    <h1 class="f36">门派，一款集体主义的APP</h1>
-    <h2 class="f28">YOUY WORLD, YOUR GUYS</h2>
+    <h1 class="f36" style="margin-top:60px;margin-bottom:10px;font-size:33px;">门派，一起玩出新花样</h1>
+    <h2 class="f28" style="font-size:24px;margin-bottom:30px;">YOUY WORLD, YOUR GUYS</h2>
    
     <?php
         $sticky = get_option('sticky_posts');
@@ -171,7 +183,7 @@ get_header(); ?>
     <div class="col3 clear">
         <ul id="post_container">
         <?php while ( have_posts() ) : the_post();?>
-            <li class="post">
+            <li class="post" style="-webkit-box-shadow:0px 2px 5px #ccc;-moz-box-shadow:0px 2px 5px #ccc;box-shadow:0px 2px 5px #ccc;">
                 <div class="pic">
                     <a href="<?php the_permalink();?>"><?php the_post_thumbnail(array(358, 279));?></a>
                 </div>
@@ -195,7 +207,7 @@ get_header(); ?>
                             }
                         }
                     ?>
-                    <div class="date">
+                    <div class="date" style="margin-top:15px;">
                         <?php if($tag):?>
                         <a href=""<?php if($tag == '活动精选'):?> class="g"<?php endif;?>>
                             <?php echo $tag;?>

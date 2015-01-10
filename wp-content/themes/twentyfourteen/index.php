@@ -19,7 +19,7 @@ get_header(); ?>
 <div style="background:url(<?php echo get_template_directory_uri(); ?>/images/ii_02.jpg) no-repeat center;height:704px;"></div>
 <div id="content" class="index">
      
-    <h1 class="f36">门派，一款集体主义的APP</h1>
+    <h1 class="f36" style="margin-top:140px;margin-bottom:10px;">门派，一起玩出新花样</h1>
     <h2 class="f28">YOUY WORLD, YOUR GUYS</h2>
 	<?php query_posts(array('cat'=>10, 'post__in'=>get_option('sticky_posts')));if(have_posts()):?>
     <div class="flexslider">
@@ -39,39 +39,42 @@ get_header(); ?>
     	
     </div>
 	<?php endif;wp_reset_postdata();?>
-     
-    <h1 class="f36">
-     	超过6500个南京本地社群在门派聚合
-    </h1>
-    <div class="banner">
-    	<img src="<?php echo get_template_directory_uri(); ?>/images/ii_05.jpg" alt="">
+</div>
+<div style="background-color:#f0f0f0;">
+	<div id="content" class="index">
+	    <h1 class="f36">
+	     	在南京，至少存在6500个社群，325000名成员
+	    </h1>
+	    <div class="banner">
+	    	<img src="<?php echo get_template_directory_uri(); ?>/images/ii_05.jpg" alt="">
+		</div>
+	     
+	    <?php
+	     	$query = new WP_Query('cat=11&post_per_page=3');
+	     	if($query->have_posts()):
+	 	?>
+	    <div class="col3 spec clear" style="padding-bottom:130px;">
+	    	<?php while($query->have_posts()):$query->the_post();?>
+	        <ul>
+	            <li>
+	            	<?php $logos = rwmb_meta('gtskk_grouplogo', 'type=image_advanced', get_the_id());
+	            		foreach ($logos as $logo):
+	            	?>
+		            <img style="margin-top:30px;" src="<?php echo $logo['url'];?>" alt="<?php echo $logo['title'];?>">
+			        <?php endforeach;?>
+		            <h3><?php the_title();?>
+		            	<em><?php echo rwmb_meta('gtskk_groupname', 'type=text', get_the_id());?></em>
+		            </h3>
+		            <p><?php echo get_the_excerpt();?></p>
+		            <?php $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'medium');?>
+					<img src="<?php echo isset($img[0]) ? $img[0] : '';?>" alt="">
+	            
+	            </li>
+	        </ul>
+		    <?php endwhile;?>
+	    </div>
+		<?php endif;?>
 	</div>
-     
-    <?php
-     	$query = new WP_Query('cat=11&post_per_page=3');
-     	if($query->have_posts()):
- 	?>
-    <div class="col3 spec clear">
-    	<?php while($query->have_posts()):$query->the_post();?>
-        <ul>
-            <li>
-            	<?php $logos = rwmb_meta('gtskk_grouplogo', 'type=image_advanced', get_the_id());
-            		foreach ($logos as $logo):
-            	?>
-	            <img src="<?php echo $logo['url'];?>" alt="<?php echo $logo['title'];?>">
-		        <?php endforeach;?>
-	            <h3><?php the_title();?>
-	            	<em><?php echo rwmb_meta('gtskk_groupname', 'type=text', get_the_id());?></em>
-	            </h3>
-	            <p><?php echo get_the_excerpt();?></p>
-	            <?php $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'medium');?>
-				<img src="<?php echo isset($img[0]) ? $img[0] : '';?>" alt="">
-            
-            </li>
-        </ul>
-	    <?php endwhile;?>
-    </div>
-	<?php endif;?>
 </div>
 
 <div class="download">
