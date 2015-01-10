@@ -135,7 +135,7 @@ get_header();
   </div>
   
 
-  <div class="section area5 clear">
+  <!-- <div class="section area5 clear">
       <div class="wrap">
       <h1 class="f40 green">获得门派SPT认证，获得赞助商的支持</h1>
      <div class="pic"> <img src="<?php echo get_template_directory_uri();?>/images/app2_48.png" alt=""></div>
@@ -166,7 +166,7 @@ get_header();
       <li class="i3">各种惊喜与奖品随时发送</li>  </ul>
       </div>
       </div>
-  </div>
+  </div> -->
 </div>
 
 <?php get_footer();
