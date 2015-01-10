@@ -220,7 +220,7 @@ get_header(); ?>
     </div>
     <?php 
         // Previous/next page navigation.
-        twentyfourteen_paging_nav();
+        // twentyfourteen_paging_nav();
     ?>
     <?php endif;?>
 </div>

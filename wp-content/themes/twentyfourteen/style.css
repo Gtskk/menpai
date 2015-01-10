@@ -94,7 +94,7 @@ body{background: #fff;}
 .col3.spec ul{float: left;display: inline; width:356px;margin-right: 13px;
 }
 ul#post_container{margin-left: -10px;}
-.col3 ul li{border-bottom: #e0dfdf 1px solid;margin-bottom: 15px;background: #fff;
+.col3 ul li{/* border-bottom: #e0dfdf 1px solid; */margin-bottom: 15px;background: #fff;
 -webkit-box-shadow:0px 2px 5px #999;
 -moz-box-shadow:0px 2px 5px #999 ;
 box-shadow:0px 2px 5px #999 ;
@@ -120,7 +120,7 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 
 /*首页*/
 .index .slide{ background:url(images/ii_02.jpg) no-repeat center; height:704px;}
-.index .col3 ul{ border:#e6e6e6 1px solid;}
+.index .col3 ul{ /* border:#e6e6e6 1px solid; */}
 .index .col3 li{text-align: center;margin-bottom: 0; overflow-x:hidden;}
 .index .col3 h3{}
 .index .col3 h3 em{font-size: 14px;display: block;}
