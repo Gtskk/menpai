@@ -90,7 +90,7 @@ get_header(); ?>
 	创建属于你们的门派</h1>
 	    <h2 class="f16">新一代移动社区+穿心行动管理功能+海量福利赞助</h2>
 	    <a href="javascript:void(0)" data-dialog="somedialog" class="trigger down_btn">
-	       <img src="<?php echo get_template_directory_uri(); ?>/images/ii_26.jpg" alt="">
+	       <img src="<?php echo get_template_directory_uri(); ?>/images/ii_26.jpg" alt="" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/index_do.png';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/ii_26.jpg'">
 	    </a>
     </div>
 </div>

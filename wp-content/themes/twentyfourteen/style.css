@@ -108,7 +108,7 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 .col3 .text{line-height: 2em;font-size: 14px; padding:10px 25px; color:#969696;}
 .col3 h3{font-size: 22px;font-weight: normal; color:#666; margin:10px 0px;}
 .col3 .date{ text-align:right;font-size: 12px;}
-.col3 .date a{ padding:1px 6px; background: #00c8c8; color:#fff;margin-right: 10px;}
+.col3 .date a{ padding:1px 6px; background: #00c8c8; color:#fff;margin-right: 10px;cursor: default;}
 .col3 .date a.g{background: #ff8200;}
 .col3 .qun{padding:10px 20px;color:#969696;border-top: 1px solid #e6e6e6;background-color: rgb(245, 245, 245);}
 .col3 .qun p{padding:5px 0px;}
