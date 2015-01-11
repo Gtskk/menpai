@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-<div style="margin-top:60px;">
+<div style="padding-top:60px;background-color:#f0f0f0;">
 	<p style="text-align:center">
 		<img src="<?php echo get_template_directory_uri();?>/images/index_top1.png" alt="top1">
 		<br />
@@ -26,8 +26,8 @@ get_header(); ?>
 </div>
 <div id="content" class="index">
      
-    <h1 class="f36" style="margin-top:140px;margin-bottom:10px;">门派，一起玩出新花样</h1>
-    <h2 class="f28">YOUY WORLD, YOUR GUYS</h2>
+    <h1 class="f36" style="margin-top:50px;margin-bottom:10px;font-size:24px;">门派，一起玩出新花样</h1>
+    <h2 class="f28" style="font-size:16px;">YOUY WORLD, YOUR GUYS</h2>
 	<?php query_posts(array('cat'=>10, 'post__in'=>get_option('sticky_posts')));if(have_posts()):?>
     <div class="flexslider">
 		<ul class="slides">
@@ -49,10 +49,10 @@ get_header(); ?>
 </div>
 <div style="background-color:#f0f0f0;">
 	<div id="content" class="index">
-	    <h1 class="f36" style="padding-top:80px;font-size:29px;">
+	    <h1 class="f36" style="padding-top:80px;font-size:29px;margin-top:120px;">
 	     	在南京，至少存在6500个社群，325000名成员
 	    </h1>
-	    <div class="banner">
+	    <div class="banner" style="margin-bottom:12px;">
 	    	<img src="<?php echo get_template_directory_uri(); ?>/images/ii_05.jpg" alt="">
 		</div>
 	     
@@ -60,7 +60,7 @@ get_header(); ?>
 	     	$query = new WP_Query('cat=11&post_per_page=3');
 	     	if($query->have_posts()):
 	 	?>
-	    <div class="col3 spec clear" style="padding-bottom:130px;">
+	    <div class="col3 spec clear" style="padding-bottom:110px;">
 	    	<?php while($query->have_posts()):$query->the_post();?>
 	        <ul>
 	            <li>
@@ -72,7 +72,7 @@ get_header(); ?>
 		            <h3><?php the_title();?>
 		            	<em><?php echo rwmb_meta('gtskk_groupname', 'type=text', get_the_id());?></em>
 		            </h3>
-		            <p><?php echo get_the_excerpt();?></p>
+		            <p style="padding:20px 25px"><?php echo get_the_excerpt();?></p>
 		            <?php $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'medium');?>
 					<img src="<?php echo isset($img[0]) ? $img[0] : '';?>" alt="">
 	            

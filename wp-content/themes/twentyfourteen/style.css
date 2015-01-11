@@ -93,7 +93,8 @@ body{background: #fff;}
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
 }
-.col3.spec ul{float: left;display: inline; width:356px;margin-right: 13px;
+.col3.spec{margin-left: -13px;}
+.col3.spec ul{float: left;display: inline; width:356px;margin-left: 14px;
 }
 ul#post_container{margin-left: -10px;}
 .col3 ul li{margin-bottom: 15px;background: #fff;
@@ -128,7 +129,7 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 .index .col3 h3{}
 .index .col3 h3 em{font-size: 14px;display: block;}
 .index .col3 p{ text-align:left; color:#999; padding:20px 35px;font-size: 14px;line-height: 1.8em;}
-.download{text-align: center;margin-top: 80px;background:#fff; height:759px;text-align: left;}
+.download{text-align: center;margin-top: 40px;background:#fff; height:759px;text-align: left;}
 .download .wrap{background:#fff url(images/ii_23.jpg) no-repeat center right;height:759px;}
 .download h1{ color:#646464; padding:200px 0px 0px 50px;line-height:1.2em;}
 .download h2{ color:#969696; margin:20px 0px 0px 50px;}

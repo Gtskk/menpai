@@ -30,17 +30,14 @@ get_header(); ?>
         <ul class="slides">
         <?php while($query->have_posts()):$query->the_post();?>
             <li>
-                <?php $web = rwmb_meta('gtskk_groupwebsite', 'type=text', get_the_id());if($web):?>
+                <?php $web = rwmb_meta('gtskk_groupwebsite', 'type=text', get_the_id());?>
                 <a href="<?php echo $web;?>">
-                <?php endif;?>
                     <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'full');
                         $image = $thumb ? $thumb[0] : '<?php echo get_template_directory_uri(); ?>/images/i_06.jpg';
                     ?>
                     <img src="<?php echo $image;?>" alt="j">
                     <h2><?php echo get_the_date('m月d日');?> <?php echo mb_substr(get_the_title(), 0, 40);?></h2>
-                <?php if($web):?>
                 </a>
-                <?php endif;?>
             </li>
         <?php endwhile;?>
         </ul>
@@ -209,7 +206,7 @@ get_header(); ?>
                     ?>
                     <div class="date" style="margin-top:15px;">
                         <?php if($tag):?>
-                        <a href=""<?php if($tag == '活动精选'):?> class="g"<?php endif;?>>
+                        <a href="javascript:void(0);"<?php if($tag == '活动精选'):?> class="g"<?php endif;?>>
                             <?php echo $tag;?>
                         </a>
                         <?php endif;?>
