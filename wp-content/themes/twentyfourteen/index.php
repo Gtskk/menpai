@@ -72,7 +72,7 @@ get_header(); ?>
 		            <h3><?php the_title();?>
 		            	<em><?php echo rwmb_meta('gtskk_groupname', 'type=text', get_the_id());?></em>
 		            </h3>
-		            <p style="padding:20px 25px"><?php echo get_the_excerpt();?></p>
+		            <p style="padding:0 25px 30px;"><?php echo get_the_excerpt();?></p>
 		            <?php $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'medium');?>
 					<img src="<?php echo isset($img[0]) ? $img[0] : '';?>" alt="">
 	            
