@@ -14,11 +14,11 @@ get_header();
 <div id="somedialog" class="dialog">
   <div class="dialog__overlay"></div>
   <div class="dialog__content">
-    <img class="action" style="position:absolute;top:5px;right:5px;cursor:pointer;" src="<?php echo get_template_directory_uri();?>/images/close_bt.png" alt="close" data-dialog-close>
+    <img class="action" style="position:absolute;top:15px;right:15px;cursor:pointer;" src="<?php echo get_template_directory_uri();?>/images/close_bt.png" alt="close" data-dialog-close>
 
-    <div style="float:left;width:700px;text-align:left;" class="gtskkll">
-      <p style="font-size:12pt;color:rgb(0,200,200);">
-        <span style="font-size:9pt;color:rgb(120,120,120);line-height:35px;">感谢您对门派的支持</span>
+    <div style="float:left;width:700px;text-align:left;margin-top:10px;" class="gtskkll">
+      <p style="font-size:14pt;color:rgb(0,200,200);">
+        <span style="font-size:11pt;color:rgb(120,120,120);line-height:35px;">感谢您对门派的支持</span>
         <br />
         门派APP正在内测中，请输入邀请码
       </p>
@@ -28,9 +28,9 @@ get_header();
         .gtskkll a:active{background-color: rgb(0,200,200);}
         .down_hide,.error_code{display: none;}
       </style>
-      <input style="width:474px;height:34px;margin-top:35px;background-color:rgb(245,245,245);border:rgb(220,220,220);" type="text" name="invite_code" />
-      <a href="javascript:void(0);" style="padding:9px 20px;color:#fff;border: rgb(220,220,220) 1px solid;">确&nbsp;&nbsp;认</a>
-      <p style="font-size:9pt;color:rgb(120,120,120);line-height:35px;" class="error_code">
+      <input style="width:474px;height:34px;margin-top:40px;background-color:rgb(245,245,245);border:rgb(220,220,220);" type="text" name="invite_code" />
+      <a href="javascript:void(0);" style="padding:9px 30px;color:#fff;border: rgb(220,220,220) 1px solid;font-size:14px;">确&nbsp;&nbsp;认</a>
+      <p style="font-size:11pt;color:rgb(120,120,120);line-height:35px;" class="error_code">
         您输入的邀请码有误
       </p>
     </div>

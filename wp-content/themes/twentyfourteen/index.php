@@ -16,17 +16,17 @@
 
 get_header(); ?>
 
-<div style="padding-top:60px;background-color:#f0f0f0;">
+<div style="padding-top:70px;background:url(<?php echo get_template_directory_uri();?>/images/index_topB.png);">
 	<p style="text-align:center">
 		<img src="<?php echo get_template_directory_uri();?>/images/index_top1.png" alt="top1">
 		<br />
-		<img src="<?php echo get_template_directory_uri();?>/images/index_top2.png" alt="top2">
+		<img style="margin-top: 50px;margin-bottom:80px;" src="<?php echo get_template_directory_uri();?>/images/index_top2.png" alt="top2">
 	</p>
 	
 </div>
 <div id="content" class="index">
      
-    <h1 class="f36" style="margin-top:50px;margin-bottom:10px;font-size:24px;">门派，一起玩出新花样</h1>
+    <h1 class="f36" style="margin-top:80px;margin-bottom:10px;font-size:29px;">门派，一起玩出新花样</h1>
     <h2 class="f28" style="font-size:16px;">YOUY WORLD, YOUR GUYS</h2>
 	<?php query_posts(array('cat'=>10, 'post__in'=>get_option('sticky_posts')));if(have_posts()):?>
     <div class="flexslider">
@@ -69,10 +69,10 @@ get_header(); ?>
 	            	?>
 		            <img style="margin-top:30px;" src="<?php echo $logo['url'];?>" alt="<?php echo $logo['title'];?>">
 			        <?php endforeach;?>
-		            <h3><?php the_title();?>
-		            	<em><?php echo rwmb_meta('gtskk_groupname', 'type=text', get_the_id());?></em>
+		            <h3 style="font-size:28px;"><?php the_title();?>
+		            	<em style="font-size:18px;"><?php echo rwmb_meta('gtskk_groupname', 'type=text', get_the_id());?></em>
 		            </h3>
-		            <p style="padding:0 25px 30px;"><?php echo get_the_excerpt();?></p>
+		            <p style="padding:0 25px 30px;line-height:2.2em;"><?php echo get_the_excerpt();?></p>
 		            <?php $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'medium');?>
 					<img src="<?php echo isset($img[0]) ? $img[0] : '';?>" alt="">
 	            
@@ -98,11 +98,11 @@ get_header(); ?>
 <div id="somedialog" class="dialog">
   <div class="dialog__overlay"></div>
   <div class="dialog__content">
-    <img class="action" style="position:absolute;top:5px;right:5px;cursor:pointer;" src="<?php echo get_template_directory_uri();?>/images/close_bt.png" alt="close" data-dialog-close>
+    <img class="action" style="position:absolute;top:15px;right:15px;cursor:pointer;" src="<?php echo get_template_directory_uri();?>/images/close_bt.png" alt="close" data-dialog-close>
 
-    <div style="float:left;width:700px;text-align:left;" class="gtskkll">
-      <p style="font-size:12pt;color:rgb(0,200,200);">
-        <span style="font-size:9pt;color:rgb(120,120,120);line-height:35px;">感谢您对门派的支持</span>
+    <div style="float:left;width:700px;text-align:left;margin-top:10px;" class="gtskkll">
+      <p style="font-size:14pt;color:rgb(0,200,200);">
+        <span style="font-size:11pt;color:rgb(120,120,120);line-height:35px;">感谢您对门派的支持</span>
         <br />
         门派APP正在内测中，请输入邀请码
       </p>
@@ -112,9 +112,9 @@ get_header(); ?>
         .gtskkll a:active{background-color: rgb(0,200,200);}
         .down_hide,.error_code{display: none;}
       </style>
-      <input style="width:474px;height:34px;margin-top:35px;background-color:rgb(245,245,245);border:rgb(220,220,220);" type="text" name="invite_code" />
-      <a href="javascript:void(0);" style="padding:9px 20px;color:#fff;border: rgb(220,220,220) 1px solid;">确&nbsp;&nbsp;认</a>
-      <p style="font-size:9pt;color:rgb(120,120,120);line-height:35px;" class="error_code">
+      <input style="width:474px;height:34px;margin-top:40px;background-color:rgb(245,245,245);border:rgb(220,220,220);" type="text" name="invite_code" />
+      <a href="javascript:void(0);" style="padding:9px 30px;color:#fff;border: rgb(220,220,220) 1px solid;font-size:14px;">确&nbsp;&nbsp;认</a>
+      <p style="font-size:11pt;color:rgb(120,120,120);line-height:35px;" class="error_code">
         您输入的邀请码有误
       </p>
     </div>
