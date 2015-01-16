@@ -178,70 +178,70 @@ function optionsframework_options() {
 	$options = array();
 	
 	$options[] = array(
-		'name' => __('General Settings', 'presslayer'),
+		'name' => __('基本设置', 'presslayer'),
 		'type' => 'heading',
 		'icon' => 'fa-wrench');
 	
 	$options[] = array(
-		'name' => __('Custom Logo', 'presslayer'),
-		'desc' => __('Upload your custom logo.', 'presslayer'),
+		'name' => __('自定义logo', 'presslayer'),
+		'desc' => __('上传你的logo', 'presslayer'),
 		'id'   => 'custom_logo',
 		'type' => 'upload');
 	
 	$options[] = array(
-		'name' => __('Custom Mobile Logo', 'presslayer'),
-		'desc' => __('Upload your custom logo for mobile screen.', 'presslayer'),
+		'name' => __('自定义移动版logo', 'presslayer'),
+		'desc' => __('上传你的移动版logo', 'presslayer'),
 		'id'   => 'custom_mobile_logo',
 		'type' => 'upload');	
 	
 	$options[] = array(
-		'name' => __('Custom Favicon', 'presslayer'),
-		'desc' => __('Upload your custom favicon.', 'presslayer'),
+		'name' => __('自定义网站图标', 'presslayer'),
+		'desc' => __('上传你的自定义网站图标', 'presslayer'),
 		'id'   => 'custom_favicon',
 		'type' => 'upload');
 	
 	$options[] = array(
-		'name' => __('Footer Widget', 'presslayer'),
-		'desc' => __('Check this box to enable Footer Widget.', 'presslayer'),
+		'name' => __('底部小工具', 'presslayer'),
+		'desc' => __('选中启动底部小工具', 'presslayer'),
 		'id' => 'footer_widget',
 		'std' => '1',
 		'type' => 'checkbox');
 	
 	$options[] = array(
-		'name' => __('Tracking Code', 'presslayer'),
-		'desc' => __('Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme.', 'presslayer'),
+		'name' => __('统计代码', 'presslayer'),
+		'desc' => __('将你的google或者其他统计代码粘贴到此处。', 'presslayer'),
 		'id' => 'tracking_code',
 		'type' => 'textarea');		
 
 	$options[] = array(
-		'name' => __('Switcher', 'presslayer'),
-		'desc' => __('Check this box to enable Switcher.', 'presslayer'),
+		'name' => __('控制开关', 'presslayer'),
+		'desc' => __('选中以启用控制开关', 'presslayer'),
 		'id' => 'switcher',
 		'std' => '0',
 		'type' => 'checkbox');								
 	
 	$options[] = array(
-		'name' => __('Navigation', 'presslayer'),
+		'name' => __('导航', 'presslayer'),
 		'type' => 'heading',
 		'icon' => 'fa-exchange');
 
 	$options[] = array(
-		'name' => __('Navagation Label', 'presslayer'),
+		'name' => __('导航标签文字', 'presslayer'),
 		'id' => 'nav_label',
 		'std' => 'NAVIGATION',
 		'type' => 'text');
 	
 	$options[] = array(
-		'name' => __('Sticky Navagation', 'presslayer'),
-		'desc' => __('Check this box to enable sticky navigation.', 'presslayer'),
+		'name' => __('粘性导航', 'presslayer'),
+		'desc' => __('选中以启用粘性导航', 'presslayer'),
 		'id' => 'sticky_nav',
 		'std' => '1',
 		'type' => 'checkbox');	
 	
 	// Nav Social Icons
 	$options[] = array(
-		"name" 		=> "Navagation Icons",
-		"desc" 		=> "Add the icons and order them.",
+		"name" 		=> "导航小图标",
+		"desc" 		=> "添加小图标",
 		"id" 		=> "nav_icons",
 		"type" 		=> "sorter",
 		"std" 		=> array( 
@@ -254,21 +254,21 @@ function optionsframework_options() {
 		"support"	=> array('title','icon','url'));
 	
 	$options[] = array(
-		'name' => __('Contact Page', 'presslayer'),
-		'desc' => __('Select a page to link', 'presslayer'),
+		'name' => __('联系页面', 'presslayer'),
+		'desc' => __('选择一个页面', 'presslayer'),
 		'id' => 'contact_page',
 		'type' => 'select',
 		'options' => $options_pages);
 	
 	//Blog Settings
 	$options[] = array(
-		'name' => __('Blog Settings', 'presslayer'),
+		'name' => __('博客设置', 'presslayer'),
 		'type' => 'heading',
 		'icon' => 'fa-wordpress');
 	
 	$options[] = array(
-		'name' => "Blog Layout",
-		'desc' => "Choose layout for default archive page (Categories, Tags, Single ..., ect).",
+		'name' => "博客布局",
+		'desc' => "选择默认文档页面的布局.",
 		'id' => "site_layout",
 		'std' => "right_sidebar",
 		'type' => "images",
@@ -279,43 +279,43 @@ function optionsframework_options() {
 	);			
 
 	$options[] = array(
-		'name' => __('Excerpt Length', 'presslayer'),
-		'desc' => __('If you selected to auto trim excerpts, how many words do you wish to show?', 'presslayer'),
+		'name' => __('文章摘要长度', 'presslayer'),
+		'desc' => __('自动过滤文章内容作为摘要的长度', 'presslayer'),
 		'id' => 'blog_entry_excerpt_trim',
 		'std' => '35',
 		'class' => 'mini',
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Related Posts Box', 'presslayer'),
-		'desc' => __('Check this box to enable Related Posts Box.', 'presslayer'),
+		'name' => __('关联文章', 'presslayer'),
+		'desc' => __('选中以启用关联文章', 'presslayer'),
 		'id' => 'related_posts_box',
 		'std' => '0',
 		'type' => 'checkbox');
 		
 	$options[] = array(
-		'name' => __('Next & Previous Posts', 'presslayer'),
-		'desc' => __('Check this box to enable Next & Previous post links.', 'presslayer'),
+		'name' => __('下一篇和上一篇文章', 'presslayer'),
+		'desc' => __('选中以启用上一篇和下一篇导航', 'presslayer'),
 		'id' => 'next_previous',
 		'std' => '0',
 		'type' => 'checkbox');
 	
 	$options[] = array(
-		'name' => __('Like Button', 'presslayer'),
-		'desc' => __('Check this box to enable like button for posts.', 'presslayer'),
+		'name' => __('喜欢按钮', 'presslayer'),
+		'desc' => __('选中以启用文章喜欢按钮', 'presslayer'),
 		'id' => 'like_button',
 		'std' => '1',
 		'type' => 'checkbox');
 	
 	//Fonts
 	$options[] = array(
-		'name' => __('Font Settings', 'presslayer'),
+		'name' => __('字体设置', 'presslayer'),
 		'type' => 'heading',
 		'icon' => 'fa-font');
 		
 	$options[] = array(
-		'name' => "Heading Font",
-		'desc' => __('Select heading (h1,h2,h3 ...) font for theme.', 'presslayer'),
+		'name' => "头部字体",
+		'desc' => __('选择主题h1，h2等的字体', 'presslayer'),
 		'id' => "heading_font",
 		'std' => "Roboto Slab",
 		'type' => "google_font",
@@ -327,15 +327,15 @@ function optionsframework_options() {
 	);
 	
 	$options[] = array(
-		'name' => __('Heading Font Custom', 'presslayer'),
-		'desc' => __('You can type Google font name here to set heading font. It will replace selected font from previous dropdown list.', 'presslayer'),
+		'name' => __('头部字体自定义', 'presslayer'),
+		'desc' => __('选择一个字体', 'presslayer'),
 		'id' => 'heading_font_custom',
 		'std' => '',
 		'type' => 'text');
 	
 	$options[] = array(
-		'name' => __('Font Weight', 'presslayer'),
-		'desc' => __('Select font weight heading.', 'presslayer'),
+		'name' => __('字体大小', 'presslayer'),
+		'desc' => __('选择头部字体的大小', 'presslayer'),
 		'id' => 'heading_weight',
 		'type' => 'select',
 		'std' => 'normal',
@@ -343,20 +343,20 @@ function optionsframework_options() {
 	
 	//Custom sidebars
 	$options[] = array(
-		'name' => __('Styling Options', 'presslayer'),
+		'name' => __('样式选项', 'presslayer'),
 		'type' => 'heading',
 		'icon' => 'fa-paint-brush');
 	
 	$options[] = array(
-		'name' => __('Use Custom Styling', 'presslayer'),
-		'desc' => __('Check this to use styling options in this page.', 'presslayer'),
+		'name' => __('使用自定义样式', 'presslayer'),
+		'desc' => __('选中以启用自定义样式', 'presslayer'),
 		'id' => 'custom_styling',
 		'std' => '1',
 		'type' => 'checkbox');
 	
 	$options[] = array(
-		'name' => __('Predefined Skins', 'presslayer'),
-		'desc' => __('Select a predefined skin then you can change everything that you want.', 'presslayer'),
+		'name' => __('预定义皮肤', 'presslayer'),
+		'desc' => __('选中以启用预定义皮肤', 'presslayer'),
 		'id' => 'example_skin',
 		'class' => 'hidden',
 		'std' => 'orange',
@@ -364,24 +364,24 @@ function optionsframework_options() {
 		'options' => $skin_array);
 	
 	$options[] = array(
-		'name' => __('Primary Color', 'presslayer'),
-		'desc' => __('No color selected by default.', 'presslayer'),
+		'name' => __('初始化颜色', 'presslayer'),
+		'desc' => __('默认无颜色', 'presslayer'),
 		'id' => 'primary_color',
 		'class' => 'hidden',
 		'std' => '#f8a82a',
 		'type' => 'color' );
 	
 	$options[] = array(
-		'name' => __('Background Color', 'presslayer'),
-		'desc' => __('No color selected by default.', 'presslayer'),
+		'name' => __('背景颜色', 'presslayer'),
+		'desc' => __('默认无颜色', 'presslayer'),
 		'id' => 'bg_color',
 		'class' => 'hidden',
 		'std' => '',
 		'type' => 'color' );	
 
 	$options[] = array( 
-		"name" 		=> "Background Patterns",
-		"desc" 		=> __('To add more patterns, you can copy them to <strong>assets/images/bg</strong>','presslayer'),
+		"name" 		=> "背景图案",
+		"desc" 		=> __('选择背景图案','presslayer'),
 		"id" 		=> "bg_pattern",
 		'class' => 'hidden',
 		"std" 		=> $bg_images_url."bg00.png",
@@ -391,12 +391,12 @@ function optionsframework_options() {
 
 	//Custom sidebars
 	$options[] = array(
-		'name' => __('Custom Sidebars', 'presslayer'),
+		'name' => __('自定义侧边栏', 'presslayer'),
 		'type' => 'heading',
 		'icon' => 'fa-bars');
 	
 	$options[] = array(
-		"name" 		=> "Sidebars",
+		"name" 		=> "侧边栏",
 		"desc" 		=> sprintf( __( 'Add the sidebars and use them in <a href="%1$s" target="_blank">Widgets</a>', 'presslayer' ), admin_url().'widgets.php'),
 		"id" 		=> "custom_sidebar",
 		"type" 		=> "sorter",
@@ -405,18 +405,18 @@ function optionsframework_options() {
 						
 	//Ads
 	$options[] = array(
-		'name' => __('Ads Management', 'presslayer'),
+		'name' => __('广告管理', 'presslayer'),
 		'type' => 'heading',
 		'icon' => 'fa-bullhorn' );	
 	
 	$options[] = array(
-		"name" 		=> "Site Ads Management",
-		"desc" 		=> __('Unlimited Ads with drag and drop sortings. Choose Archive for hook if you want to store it and reuse later.', 'presslayer'),
+		"name" 		=> "网站广告管理",
+		"desc" 		=> __('无限制的广告添加和管理', 'presslayer'),
 		"id" 		=> "ads",
 		"type" 		=> "sorter",
 		"std" 		=> "",
 		"hook"		=> $ads_hook_array,
-		"hook_name" => __('Apply to','presslayer'),
+		"hook_name" => __('应用于','presslayer'),
 		"support"	=> array('title','hook','content','autop'));		
 
 	return $options;
