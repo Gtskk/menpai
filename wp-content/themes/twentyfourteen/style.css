@@ -60,7 +60,7 @@ zoom:1; /* for IE6 IE7 */
 
 body{background: #fff;}
 .wrap{ width:1100px; margin:0 auto;}
-#header{background: #fff;border-bottom: 1px solid #e1e1e1;}
+#header{background: #fff;/* border-bottom: 1px solid #e1e1e1; */}
 .logo{margin: 15px 0px 0px 10px;float: left;display: inline;}
 .menu{float: right;display: inline;margin-top: 40px;}
 .menu li{display: inline;float: left;}
