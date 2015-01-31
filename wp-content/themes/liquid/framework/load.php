@@ -13,7 +13,7 @@ if( is_child_theme() ) {
 }
 
 define( 'OPTIONS_FRAMEWORK_DIRECTORY', THEME_URI . 'framework/' );
-define( 'OPTIONS_MENU_TITLE', $themeInfo['Name'] . ' ' . __('Options', 'presslayer') );
+define( 'OPTIONS_MENU_TITLE', '主题设置' );
 define( 'OPTIONS_MENU_SLUG', 'options-framework');
 define( 'OPTIONS_PAGE_TITLE', $themeInfo['Name']);
 define( 'THEME_NAME', $themeInfo['Name']);

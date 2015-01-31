@@ -18,36 +18,40 @@ get_header(); ?>
     </h1>
     
     <?php
-        $sticky = get_option('sticky_posts');
+        $conn = mysqli_connect('112.124.33.98', 'root', 'Root1234', 'mempai') or die('数据库连接错误');
+        $conn->set_charset('utf8');
+
+        $stmt = $conn->query("SELECT group_name FROM group_info WHERE is_recommend = 1");
+
+        /*$sticky = get_option('sticky_posts');
         $query = new WP_Query(array(
             'cat' => get_query_var('cat'),
             'posts_per_page' => 3,
             'post__in' => $sticky
         )); 
-        if ($query->have_posts()):
+        if ($query->have_posts()):*/
     ?>
     <div class="flexslider">
         <ul class="slides">
-        <?php while($query->have_posts()):$query->the_post();?>
+        <?php while($ro =mysqli_fetch_assoc($stmt))://while($query->have_posts()):$query->the_post();?>
             <li>
-                <?php $web = rwmb_meta('gtskk_groupwebsite', 'type=text', get_the_id());?>
-                <a href="<?php echo $web;?>">
-                    <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'full');
-                        $image = $thumb ? $thumb[0] : '<?php echo get_template_directory_uri(); ?>/images/i_06.jpg';
+                <?php //$web = rwmb_meta('gtskk_groupwebsite', 'type=text', get_the_id());?>
+                <a href="#">
+                    <?php 
+                        //$thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'full');
+                        $image = get_template_directory_uri().'/images/i_06.jpg';
                     ?>
                     <img src="<?php echo $image;?>" alt="j">
-                    <h2><?php echo get_the_date('m月d日');?> <?php echo mb_substr(get_the_title(), 0, 40);?></h2>
+                    <h2><?php //echo get_the_date('m月d日');echo mb_substr(get_the_title(), 0, 40);?><?php echo $ro['group_name'];?></h2>
                 </a>
             </li>
         <?php endwhile;?>
         </ul>
         
     </div>
-    <?php endif;wp_reset_postdata();?>
+    <?php $stmt->free();//endif;wp_reset_postdata();?>
 
     <?php
-        $conn = mysqli_connect('112.124.33.98', 'root', 'Root1234', 'mempai') or die('数据库连接错误');
-        $conn->set_charset('utf8');
         $query="select count(*) from web_data";
         $result=$conn->query($query);
         $row = mysqli_fetch_array($result);
@@ -89,7 +93,7 @@ get_header(); ?>
                         </a>
                     </dt>
                 </dl>
-                <p>
+                <p style="margin-top:0;">
                 <?php echo $row['group_content'];?>
                 </p>
             </li>

@@ -27,7 +27,7 @@ get_header(); ?>
 <div id="content" class="index">
      
     <h1 class="f36" style="margin-top:80px;margin-bottom:10px;font-size:29px;">门派，一起玩出新花样</h1>
-    <h2 class="f28" style="font-size:16px;">YOUY WORLD, YOUR GUYS</h2>
+    <h2 class="f28" style="font-size:16px;">YOUR WORLD, YOUR GUYS</h2>
 	<?php query_posts(array('cat'=>10, 'post__in'=>get_option('sticky_posts')));if(have_posts()):?>
     <div class="flexslider">
 		<ul class="slides">
@@ -88,7 +88,7 @@ get_header(); ?>
     <div class="wrap">
 	    <h1 class="f36">免费下载门派APP<br />
 	创建属于你们的门派</h1>
-	    <h2 class="f16">新一代移动社区+穿心行动管理功能+海量福利赞助</h2>
+	    <h2 class="f16">新一代移动社区+创新行动管理功能+海量福利赞助</h2>
 	    <a href="javascript:void(0)" data-dialog="somedialog" class="trigger down_btn">
 	       <img src="<?php echo get_template_directory_uri(); ?>/images/ii_26.jpg" alt="" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/index_do.png';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/ii_26.jpg'">
 	    </a>

@@ -150,6 +150,7 @@ ul#post_container li{width: 360px;margin-left: 10px;}
 	.org .qlist li p{float: right;display: inline; width:550px;font-size: 14px; color:#999;margin-top: 10px;}
 	.pages{text-align: center;color:#999; margin:40px 0px;}
 	.pages a, .pages span{ padding:5px 10px; border:#ccc 1px solid; color:#999;margin: 0px 2px;}
+  .pages span{background-color: #ddd;}
   .qlist .clear dl dt img.round{border-radius: 65px;-webkit-border-radius:65px;}
   .org .qlist .no-border-bot{border-bottom: none;}
 	

@@ -15,9 +15,9 @@ add_action('wp_head','add_header_script', 99);
 if(is_admin()):
 	function custom_css_admin_menu(){
 	   if(defined('OPTIONS_MENU_SLUG') && OPTIONS_MENU_SLUG!=''){
-			add_submenu_page( OPTIONS_MENU_SLUG ,__('Custom CSS','presslayer'), __('Custom CSS','presslayer'), 'manage_options', CSS_PAGE_SLUG, 'css_admin_view' );
+			add_submenu_page( OPTIONS_MENU_SLUG ,__('自定义样式','presslayer'), __('自定义样式','presslayer'), 'manage_options', CSS_PAGE_SLUG, 'css_admin_view' );
 	   }else{
-			add_menu_page(__('Custom CSS','presslayer'),__('Custom CSS','presslayer'),'manage_options', CSS_PAGE_SLUG ,'css_admin_view');
+			add_menu_page(__('自定义样式','presslayer'),__('自定义样式','presslayer'),'manage_options', CSS_PAGE_SLUG ,'css_admin_view');
 	   }   
 	}
 	add_action( 'admin_enqueue_scripts', 'css_admin_script' );

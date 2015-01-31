@@ -5,9 +5,9 @@
 get_header();
 ?>
 
-<div class="slide">
+<div class="slide" style="text-align:center;">
   <a href="javascript:void(0)" data-dialog="somedialog" class="trigger">
-    <img style="margin-top:187px;margin-left:43%;" src="<?php echo get_template_directory_uri();?>/images/app_d.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/app_do.png';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/app_d.png'" />
+    <img style="margin-top:187px;" src="<?php echo get_template_directory_uri();?>/images/app_d.png" onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/app_do.png';" onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/app_d.png'" />
   </a>
 </div>
 
