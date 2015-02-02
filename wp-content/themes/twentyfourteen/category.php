@@ -151,7 +151,7 @@ get_header(); ?>
 <?php else:?>
 <div id="content" class="activity">
     <h1 class="f36" style="margin-top:60px;margin-bottom:10px;font-size:28px;">门派，一起玩出新花样</h1>
-    <h2 class="f28" style="font-size:18px;margin-bottom:30px;">YOUY WORLD, YOUR GUYS</h2>
+    <h2 class="f28" style="font-size:18px;margin-bottom:30px;">YOUR WORLD, YOUR GUYS</h2>
    
     <?php
         $sticky = get_option('sticky_posts');
