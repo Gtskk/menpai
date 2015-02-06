@@ -79,7 +79,7 @@ $table_prefix  = 'mp_';
  * 将这个值改为true，WordPress将显示所有用于开发的提示。
  * 强烈建议插件开发者在开发环境中启用WP_DEBUG。
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /**
  * zh_CN本地化设置：启用ICP备案号显示
