@@ -34,7 +34,7 @@ get_header(); ?>
 		<?php while(have_posts()):the_post();?>
 	        <li>
 	        	<a href="<?php the_permalink();?>">
-	        		<?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'post-thumbnail');
+	        		<?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'full');
 	        			$image = $thumb ? $thumb[0] : '<?php echo get_template_directory_uri(); ?>/images/i_06.jpg';
 	        		?>
 	        		<img src="<?php echo $image;?>" alt="j">
@@ -57,7 +57,7 @@ get_header(); ?>
 		</div>
 	     
 	    <?php
-	     	$query = new WP_Query('cat=11&post_per_page=3');
+	     	$query = new WP_Query('cat=11&posts_per_page=4');
 	     	if($query->have_posts()):
 	 	?>
 	    <div class="col3 spec clear" style="padding-bottom:110px;">

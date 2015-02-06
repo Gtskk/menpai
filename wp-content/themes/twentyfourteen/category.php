@@ -21,7 +21,7 @@ get_header(); ?>
         $conn = mysqli_connect('112.124.33.98', 'root', 'Root1234', 'mempai') or die('数据库连接错误');
         $conn->set_charset('utf8');
 
-        $stmt = $conn->query("SELECT group_name FROM group_info WHERE is_recommend = 1");
+        $stmt = $conn->query("SELECT group_name, foundation_status FROM group_info WHERE is_recommend = 1");
 
         /*$sticky = get_option('sticky_posts');
         $query = new WP_Query(array(
@@ -36,7 +36,7 @@ get_header(); ?>
         <?php while($ro =mysqli_fetch_assoc($stmt))://while($query->have_posts()):$query->the_post();?>
             <li>
                 <?php //$web = rwmb_meta('gtskk_groupwebsite', 'type=text', get_the_id());?>
-                <a href="#">
+                <a href="<?php echo $ro['foundation_status'] ?: 'javascript:void(0);';?>">
                     <?php 
                         //$thumb = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'full');
                         $image = get_template_directory_uri().'/images/i_06.jpg';
@@ -157,7 +157,7 @@ get_header(); ?>
         $sticky = get_option('sticky_posts');
         $query = new WP_Query(array(
             'cat' => get_query_var('cat'),
-            'posts_per_page' => 3,
+            'posts_per_page' => 4,
             'post__in' => $sticky
         )); 
         if ($query->have_posts()):
@@ -190,7 +190,11 @@ get_header(); ?>
                 </div>
                  
                 <div class="text">
-                    <h3><?php the_title();?></h3>
+                    <a href="<?php the_permalink();?>">
+                        <h3 style="font-size:20px;">
+                            <?php the_title();?>
+                        </h3>
+                    </a>
                     <?php the_excerpt();?>
                     <?php
                         // Show an optional term description.
